@@ -154,6 +154,6 @@ If you have questions about security that don't involve reporting a vulnerabilit
 
 ---
 
-**Last Updated**: January 14, 2025
+**Last Updated**: November 14, 2025
 
 Thank you for helping keep Calliope AI and our users safe!

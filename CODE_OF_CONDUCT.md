@@ -153,6 +153,6 @@ If you have questions about this Code of Conduct, please reach out to:
 
 ---
 
-**Last Updated**: January 14, 2025
+**Last Updated**: November 14, 2025
 
 Thank you for helping make Calliope AI a welcoming community for all!

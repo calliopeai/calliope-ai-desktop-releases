@@ -311,6 +311,6 @@ Please let us know via:
 
 ---
 
-**Last Updated**: January 14, 2025
+**Last Updated**: November 14, 2025
 
 Thank you for being part of the Calliope AI community!
