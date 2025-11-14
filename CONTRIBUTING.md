@@ -62,6 +62,7 @@ Please be respectful and constructive in all interactions. We're all here to bui
 ## Questions?
 
 For general questions about Calliope AI:
+- **Discord**: https://discord.gg/Z9bbbE6hJv (fastest response!)
 - **Email**: support@calliope.ai
 - **Website**: https://calliope.ai
 - **Documentation**: https://docs.calliope.ai

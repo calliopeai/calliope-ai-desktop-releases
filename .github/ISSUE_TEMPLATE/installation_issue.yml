@@ -1,0 +1,142 @@
+name: Installation Issue
+description: Report problems installing or launching Calliope AI applications
+title: "[Installation]: "
+labels: ["installation", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting an installation issue! Please provide details below.
+
+  - type: dropdown
+    id: application
+    attributes:
+      label: Application
+      description: Which application are you trying to install?
+      options:
+        - Calliope AI IDE
+        - Calliope AI Lab
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: What version are you trying to install?
+      placeholder: "e.g., 1.0.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating System
+      description: What operating system are you using?
+      options:
+        - macOS (Intel x64)
+        - macOS (Apple Silicon ARM64)
+        - Windows (x64)
+        - Windows (ARM64)
+        - Linux (x64)
+        - Linux (ARM64)
+    validations:
+      required: true
+
+  - type: input
+    id: os-version
+    attributes:
+      label: OS Version
+      description: What version of the operating system?
+      placeholder: "e.g., macOS 14.1, Windows 11 23H2, Ubuntu 22.04"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: package-format
+    attributes:
+      label: Package Format
+      description: What package format are you trying to install?
+      options:
+        - .zip (macOS)
+        - .exe installer (Windows)
+        - .zip portable (Windows)
+        - .deb (Debian/Ubuntu)
+        - .rpm (Fedora/RedHat)
+        - .AppImage (Linux)
+        - .tar.gz (Linux)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: Issue Type
+      description: What kind of installation issue are you experiencing?
+      options:
+        - Download issues
+        - Cannot extract/unzip files
+        - Installation fails
+        - Application won't launch
+        - Security warnings/blocks
+        - Permission errors
+        - Missing dependencies
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Issue Description
+      description: Describe the installation issue you're experiencing
+      placeholder: Tell us what's happening
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps Taken
+      description: What steps have you tried so far?
+      placeholder: |
+        1. Downloaded file from...
+        2. Attempted to...
+        3. Got error...
+    validations:
+      required: true
+
+  - type: textarea
+    id: error-messages
+    attributes:
+      label: Error Messages
+      description: Please paste any error messages you're seeing
+      placeholder: Paste error messages here
+      render: shell
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots of the error or issue
+      placeholder: Drag and drop images here
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Troubleshooting Checklist
+      description: Have you tried these common fixes?
+      options:
+        - label: I've verified the download is not corrupted (check file size)
+        - label: I've tried right-click → Open (macOS) or "Run anyway" (Windows) for security warnings
+        - label: I've checked that I have sufficient disk space
+        - label: I've tried running as administrator (Windows) or with sudo (Linux) if applicable
+        - label: I've checked that my OS version is supported (see README)
+        - label: I've searched existing issues for similar problems
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Add any other context about the problem here
+      placeholder: Any additional information that might be helpful

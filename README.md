@@ -189,11 +189,11 @@ Both applications support multiple AI providers. You'll need API keys from your 
 
 ---
 
-## Documentation
+## Documentation & Community
 
-- **Getting Started Guides**: See the `/docs` directory (coming soon)
-- **API Documentation**: Available at [docs.calliope.ai](https://docs.calliope.ai)
-- **Community Forum**: Join our community at [community.calliope.ai](https://community.calliope.ai)
+- **Documentation**: Available at [docs.calliope.ai](https://docs.calliope.ai)
+- **Discord Community**: Join our Discord server at [discord.gg/Z9bbbE6hJv](https://discord.gg/Z9bbbE6hJv)
+- **Support**: See [SUPPORT.md](SUPPORT.md) for help resources
 
 ---
 
@@ -208,9 +208,10 @@ Found a bug or need help? Please open an issue on this repository:
 3. Include steps to reproduce
 4. Attach logs if applicable
 
-### Community Support
+### Getting Help
 
-- **GitHub Discussions**: [github.com/calliopeai](https://github.com/calliopeai)
+- **Discord Community**: [discord.gg/Z9bbbE6hJv](https://discord.gg/Z9bbbE6hJv) - The fastest way to get help!
+- **Support Guide**: See [SUPPORT.md](SUPPORT.md) for comprehensive help
 - **Email**: support@calliope.ai
 
 ---
@@ -280,6 +281,7 @@ See [CHANGELOG.md](CHANGELOG.md) for detailed version history and release notes.
   <p>
     <a href="https://calliope.ai">Website</a> •
     <a href="https://docs.calliope.ai">Documentation</a> •
+    <a href="https://discord.gg/Z9bbbE6hJv">Discord</a> •
     <a href="https://github.com/calliopeai">GitHub</a>
   </p>
 </div>

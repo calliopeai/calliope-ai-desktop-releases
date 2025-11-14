@@ -1,0 +1,111 @@
+name: Feature Request
+description: Suggest a new feature or enhancement for Calliope AI applications
+title: "[Feature]: "
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a feature! We appreciate your input in making Calliope AI better.
+
+  - type: dropdown
+    id: application
+    attributes:
+      label: Application
+      description: Which application is this feature request for?
+      options:
+        - Calliope AI IDE
+        - Calliope AI Lab
+        - Both
+        - This repository (releases/downloads)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: feature-type
+    attributes:
+      label: Feature Type
+      description: What type of feature are you requesting?
+      options:
+        - New AI provider integration
+        - UI/UX improvement
+        - Performance enhancement
+        - New functionality
+        - Documentation improvement
+        - Developer experience
+        - Platform support (new OS/architecture)
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: Is your feature request related to a problem? Please describe.
+      placeholder: "I'm frustrated when..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe the solution you'd like to see
+      placeholder: "I would like to be able to..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Have you considered any alternative solutions or features?
+      placeholder: "I've also thought about..."
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use Case
+      description: How would you use this feature? What's your workflow?
+      placeholder: "In my daily work, I would..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority (from your perspective)
+      description: How important is this feature to you?
+      options:
+        - Critical - Blocking my work
+        - High - Would significantly improve my workflow
+        - Medium - Would be nice to have
+        - Low - Not urgent
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: willing-to-help
+    attributes:
+      label: Contribution
+      description: Would you be willing to help with this feature?
+      options:
+        - label: I would be willing to test this feature
+        - label: I would be willing to provide feedback during development
+        - label: I would be willing to contribute documentation
+        - label: I would be willing to contribute code (if source becomes available)
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: Examples / References
+      description: Are there any examples from other tools or references that might help?
+      placeholder: "Similar to how [tool] does [feature]..."
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Add any other context, screenshots, or mockups about the feature request
+      placeholder: Any additional information that might be helpful
