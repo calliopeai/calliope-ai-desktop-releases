@@ -1,0 +1,44 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+
+# Editor directories
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.log
+*.bak
+
+# Build artifacts (if any automation is added later)
+dist/
+build/
+*.zip
+*.exe
+*.deb
+*.rpm
+*.dmg
+*.AppImage
+*.tar.gz
+
+# Don't ignore logos/assets we want to commit
+!assets/**/*.png
+!assets/**/*.svg
+!assets/**/*.ico
+!assets/**/*.jpg
