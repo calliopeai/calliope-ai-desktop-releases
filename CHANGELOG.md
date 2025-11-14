@@ -27,7 +27,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Inline code completions with GitHub Copilot-style suggestions
   - AI-powered code editing and refactoring
   - Native chat participant integration (`@calliope`)
-  - Secure API key management via VS Code SecretStorage
+  - Secure API key management via SecretStorage API
 
 - **Custom Branding & Themes**
   - Calliope custom theme with professional color schemes
@@ -157,17 +157,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 This is the initial v1.0.0 release. No upgrade path from previous versions is required.
 
 Future releases will include upgrade instructions and migration guides as needed.
-
----
-
-## Development & Contribution
-
-Both applications are built from the following source repositories:
-
-- **Calliope AI IDE**: Built from calliope-vscode repository
-- **Calliope AI Lab**: Built from lab-desktop repository
-
-For development, contribution guidelines, and source code access, please refer to the main repositories.
 
 ---
 
