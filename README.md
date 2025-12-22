@@ -282,6 +282,6 @@ See [CHANGELOG.md](CHANGELOG.md) for detailed version history and release notes.
     <a href="https://calliope.ai">Website</a> •
     <a href="https://docs.calliope.ai">Documentation</a> •
     <a href="https://discord.gg/Z9bbbE6hJv">Discord</a> •
-    <a href="https://github.com/calliopeai">GitHub</a>
+    <a href="https://github.com/CalliopeAI">GitHub</a>
   </p>
 </div>
