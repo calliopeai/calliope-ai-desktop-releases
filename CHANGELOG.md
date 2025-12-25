@@ -7,6 +7,68 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.2.4] - 2025-12-24
+
+### Calliope AI IDE
+
+#### Added
+- **Autonomous Background Agents**
+  - TurboLight - Fast, lightweight agent for quick tasks
+  - DeepCode - Deep code analysis and refactoring agent
+  - FastAgent - Rapid iteration agent for straightforward changes
+  - AutoAgent - Fully autonomous coding agent for complex tasks
+  - Agents run in background while you continue working
+
+- **Agent Councils**
+  - Multi-agent collaboration for complex problems
+  - Specialized agent roles (Planner, Executor, Validator, Optimizer)
+  - Coordinated task chains with dynamic role assignment
+  - Consensus-based decision making across agents
+
+- **Visual Thinking**
+  - See agent reasoning and planning in real-time
+  - Visual task decomposition and dependency graphs
+  - Transparent decision-making process
+
+#### Improved
+- Enhanced Agent/Chat multimode support - seamlessly switch between modes
+- Better context preservation across mode switches
+- Improved agent memory and state management
+
+---
+
+### Calliope AI Lab
+
+#### Added
+- **Notebook Generation Mode**
+  - New AI mode to generate complete notebooks from natural language
+  - Improve existing notebooks via agent-assisted refactoring
+  - Automatic cell organization and documentation
+
+#### Improved
+- **Theme Improvements**
+  - Refined UI styling and visual consistency
+  - Better dark/light mode support
+  - Improved syntax highlighting
+
+- **Chat Commands**
+  - Enhanced slash commands for faster workflows
+  - Better command autocomplete and suggestions
+  - New commands for common data operations
+
+- **Data Agent Enhancements**
+  - Smarter context awareness for data exploration
+  - Improved SQL generation accuracy
+  - Better handling of complex multi-table queries
+
+- **Magic Commands**
+  - `%calliope` - Enhanced with new subcommands and options
+  - `%ai` - Streamlined AI interaction directly in cells
+  - Better model selection and switching
+  - Improved output formatting and display
+
+---
+
 ## [1.0.0] - 2025-01-14
 
 ### Calliope AI IDE
@@ -162,17 +224,13 @@ Future releases will include upgrade instructions and migration guides as needed
 
 ## What's Next?
 
-### Planned for v1.1.0
+### Planned for v1.3.0
 - Code signing for macOS and Windows
-- Additional AI provider integrations
-- Enhanced offline capabilities
-- Performance optimizations
+- Enhanced agent customization and configuration
+- More AI provider integrations
+- Performance optimizations for large codebases
 - Extended documentation and tutorials
 
 ---
 
 **Note**: For detailed release artifacts and downloads, check the [Releases](../../releases) page.
-
----
-
-_Generated for the initial v1.0.0 public release of Calliope AI desktop applications._
