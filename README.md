@@ -5,8 +5,11 @@
 
   **Professional AI-Powered Development & Data Analysis Tools**
 
-  [![License](https://img.shields.io/badge/License-Free%20to%20Use-brightgreen)](#license)
+  [![Free](https://img.shields.io/badge/Price-Free-brightgreen)](#free--byok)
+  [![BYOK](https://img.shields.io/badge/API%20Keys-Bring%20Your%20Own-orange)](#free--byok)
   [![Platform](https://img.shields.io/badge/Platform-macOS%20%7C%20Windows%20%7C%20Linux-blue)](#supported-platforms)
+
+  **100% Free Desktop Apps — BYOK — API Pricing, No Middleman**
 </div>
 
 ---
@@ -19,13 +22,87 @@ Our desktop applications provide powerful, AI-enhanced tools for developers and 
 
 ---
 
+## Free & BYOK
+
+<div align="center">
+
+### No Account. No Login. No Subscription. No BS.
+
+**Just download and use. Bring your own API keys.**
+
+</div>
+
+- **100% Free** — No trials, no feature gates, no paywalls
+- **No Account Required** — Download, install, and start working immediately
+- **Bring Your Own Keys (BYOK)** — Use API keys from providers you already have
+- **No Middleman** — Pay API pricing directly to your provider, zero markup from us
+- **Offline Capable** — Core features work without internet
+
+**Supported AI Providers:**
+| Provider | Pricing | Notes |
+|----------|---------|-------|
+| [OpenAI](https://platform.openai.com) | Pay-as-you-go | GPT-4, GPT-4o, o1, etc. |
+| [Anthropic](https://console.anthropic.com) | Pay-as-you-go | Claude models |
+| [Google AI](https://ai.google.dev) | Free tier available | Gemini models |
+| [Mistral](https://console.mistral.ai) | Pay-as-you-go | Mistral, Codestral, etc. |
+| [Together AI](https://api.together.ai) | Pay-as-you-go | Open-source models |
+| [AI21](https://studio.ai21.com) | Pay-as-you-go | Jamba models |
+| [Cohere](https://dashboard.cohere.com) | Pay-as-you-go | Command models |
+| [Ollama](https://ollama.ai) | Free | Run models locally, fully offline |
+
+### Why This Matters
+
+**Calliope AI IDE vs. Other AI Coding Tools:**
+
+| | Calliope AI IDE | Cursor | GitHub Copilot |
+|--|-----------------|--------|----------------|
+| **App Cost** | Free | $20+/mo | $10-39/mo |
+| **AI Provider** | BYOK (you choose) | Locked in | Locked in |
+| **Account Required** | No | Yes | Yes |
+| **Multi-model** | Yes | Limited | No |
+| **Offline Capable** | Yes (with Ollama) | No | No |
+| **Background Agents** | Yes | No | No |
+
+**Calliope AI Lab vs. Other Data Science Tools:**
+
+| | Calliope AI Lab | Jupyter + Copilot | Databricks |
+|--|-----------------|-------------------|------------|
+| **App Cost** | Free | Plugin fees | $$$/mo |
+| **AI Provider** | BYOK (you choose) | Locked in | Locked in |
+| **Account Required** | No | Yes | Yes |
+| **Multi-model** | Yes | No | Limited |
+| **Built-in AI Chat** | Yes | No | Yes |
+| **Local Database** | Included | DIY | Cloud only |
+
+---
+
 ## Available Applications
 
 ### 🚀 Calliope AI IDE
 
 **A Professional AI-Enhanced Integrated Development Environment**
 
+<p align="center">
+  <img src="assets/screenshots/ide/welcome.png" alt="Calliope AI IDE" width="700"/>
+</p>
+
 Calliope AI IDE is a full-featured development environment with integrated AI capabilities, custom theming, and powerful extensions for modern software development.
+
+<details>
+<summary><b>View more screenshots</b></summary>
+<p align="center">
+  <img src="assets/screenshots/ide/chat.png" alt="AI Chat" width="600"/><br/>
+  <em>AI Chat - Ask questions, get code suggestions</em>
+</p>
+<p align="center">
+  <img src="assets/screenshots/ide/model-picker.png" alt="Model Picker" width="400"/><br/>
+  <em>Choose your AI provider</em>
+</p>
+<p align="center">
+  <img src="assets/screenshots/ide/autonomous-agents.png" alt="Autonomous Agents" width="600"/><br/>
+  <em>Background agents working autonomously</em>
+</p>
+</details>
 
 **Key Features:**
 - Complete code editing environment with IntelliSense and debugging
@@ -47,7 +124,23 @@ Calliope AI IDE is a full-featured development environment with integrated AI ca
 
 **Advanced AI-Powered Data Analysis Environment**
 
+<p align="center">
+  <img src="assets/screenshots/lab/model-picker.png" alt="Calliope AI Lab" width="700"/>
+</p>
+
 Calliope AI Lab combines a professional notebook interface with intelligent data agents, providing an all-in-one solution for data science and analysis work.
+
+<details>
+<summary><b>View more screenshots</b></summary>
+<p align="center">
+  <img src="assets/screenshots/lab/3d-visualization.png" alt="3D Visualization" width="600"/><br/>
+  <em>Advanced data visualizations</em>
+</p>
+<p align="center">
+  <img src="assets/screenshots/lab/settings.png" alt="Settings" width="600"/><br/>
+  <em>Configure AI providers and preferences</em>
+</p>
+</details>
 
 **Key Features:**
 - Interactive notebook environment for data analysis
@@ -151,12 +244,7 @@ cd calliope-*
 
 ### AI Provider Setup
 
-Both applications support multiple AI providers. You'll need API keys from your chosen providers:
-
-- **OpenAI**: Get your API key at [platform.openai.com](https://platform.openai.com)
-- **Anthropic (Claude)**: Get your API key at [console.anthropic.com](https://console.anthropic.com)
-- **Google AI**: Get your API key at [ai.google.dev](https://ai.google.dev)
-- **Ollama**: Install locally for offline AI capabilities - [ollama.ai](https://ollama.ai)
+Both applications support multiple AI providers. You'll need API keys from your chosen providers. See the [full list of supported providers](#free--byok) above.
 
 ### Data Directories
 
@@ -186,6 +274,55 @@ Both applications support multiple AI providers. You'll need API keys from your 
 - **RAM**: 16GB or more
 - **Storage**: 10GB+ free space (for data analysis workloads)
 - **Internet**: Required only for AI provider API calls and extension downloads
+
+---
+
+## Philosophy
+
+> **AI removes friction. You do real work.**
+
+| AI Handles | You Handle |
+|------------|------------|
+| Boilerplate generation | Architectural decisions |
+| Syntax & debugging | Business logic |
+| Documentation drafts | Quality judgment |
+| Code review assistance | System design |
+
+These are serious tools for serious work — not toys.
+
+---
+
+## FAQ
+
+<details>
+<summary><b>Do I need to create an account?</b></summary>
+No. Download, install, and start working. No signup, no login, no account required.
+</details>
+
+<details>
+<summary><b>Is there a catch? How is this free?</b></summary>
+The desktop apps are genuinely free. We make money from our cloud platform and enterprise offerings. The desktop apps are a way to let developers and data scientists experience Calliope with zero friction.
+</details>
+
+<details>
+<summary><b>What do I need to use AI features?</b></summary>
+API keys from your preferred AI provider(s). You pay them directly at their standard rates — we don't mark up or proxy your API calls.
+</details>
+
+<details>
+<summary><b>Can I use this completely offline?</b></summary>
+Yes! Core editing/notebook features work offline. For AI features, you can run <a href="https://ollama.ai">Ollama</a> locally for fully offline AI.
+</details>
+
+<details>
+<summary><b>Is my data sent anywhere?</b></summary>
+Your data stays on your machine. When you use AI features, your prompts go directly to your chosen AI provider — not through our servers.
+</details>
+
+<details>
+<summary><b>Why should I use this instead of Cursor/Copilot?</b></summary>
+Freedom. Use any AI provider (or multiple), switch anytime, pay API rates instead of subscriptions, work offline, no vendor lock-in.
+</details>
 
 ---
 
@@ -230,7 +367,7 @@ To manually check for updates:
 
 ### Free to Use
 
-These applications are provided **free of charge** for personal and commercial use.
+These applications are provided **free of charge** for personal and commercial use. See [Free & BYOK](#free--byok) for details on the pricing model.
 
 ### No Warranty - Use at Your Own Risk
 
