@@ -9,6 +9,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.2.4] - 2025-12-24
 
+> **⚠️ Important: Unsigned Builds**
+>
+> We are currently awaiting our code signing certificates. Version 1.2.4 builds are unsigned, which means:
+> - **macOS**: Right-click the app and select "Open" to bypass Gatekeeper warnings
+> - **Windows**: Click "More info" → "Run anyway" when SmartScreen appears
+>
+> Code signing will be added in an upcoming release. We appreciate your patience!
+
 ### Calliope AI IDE
 
 #### Added

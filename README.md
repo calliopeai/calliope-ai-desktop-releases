@@ -83,7 +83,7 @@ Our desktop applications provide powerful, AI-enhanced tools for developers and 
 **A Professional AI-Enhanced Integrated Development Environment**
 
 <p align="center">
-  <img src="assets/screenshots/ide/welcome.png" alt="Calliope AI IDE" width="700"/>
+  <img src="assets/screenshots/ide/main.png" alt="Calliope AI IDE" width="700"/>
 </p>
 
 Calliope AI IDE is a full-featured development environment with integrated AI capabilities, custom theming, and powerful extensions for modern software development.
@@ -91,16 +91,20 @@ Calliope AI IDE is a full-featured development environment with integrated AI ca
 <details>
 <summary><b>View more screenshots</b></summary>
 <p align="center">
+  <img src="assets/screenshots/ide/agents.png" alt="Autonomous Agents" width="600"/><br/>
+  <em>Autonomous agents running tasks in the background</em>
+</p>
+<p align="center">
+  <img src="assets/screenshots/ide/councils.png" alt="AI Councils" width="600"/><br/>
+  <em>AI Councils - Multi-perspective code review and collaboration</em>
+</p>
+<p align="center">
+  <img src="assets/screenshots/ide/oneshot.png" alt="One-Shot Tasks" width="600"/><br/>
+  <em>One-Shot Tasks - Launch autonomous agents to build features from scratch</em>
+</p>
+<p align="center">
   <img src="assets/screenshots/ide/chat.png" alt="AI Chat" width="600"/><br/>
   <em>AI Chat - Ask questions, get code suggestions</em>
-</p>
-<p align="center">
-  <img src="assets/screenshots/ide/model-picker.png" alt="Model Picker" width="400"/><br/>
-  <em>Choose your AI provider</em>
-</p>
-<p align="center">
-  <img src="assets/screenshots/ide/autonomous-agents.png" alt="Autonomous Agents" width="600"/><br/>
-  <em>Background agents working autonomously</em>
 </p>
 </details>
 
@@ -125,13 +129,17 @@ Calliope AI IDE is a full-featured development environment with integrated AI ca
 **Advanced AI-Powered Data Analysis Environment**
 
 <p align="center">
-  <img src="assets/screenshots/lab/model-picker.png" alt="Calliope AI Lab" width="700"/>
+  <img src="assets/screenshots/lab/main.png" alt="Calliope AI Lab" width="700"/>
 </p>
 
 Calliope AI Lab combines a professional notebook interface with intelligent data agents, providing an all-in-one solution for data science and analysis work.
 
 <details>
 <summary><b>View more screenshots</b></summary>
+<p align="center">
+  <img src="assets/screenshots/lab/code-explanation.png" alt="Code Explanation" width="600"/><br/>
+  <em>AI-powered code explanations and visualizations</em>
+</p>
 <p align="center">
   <img src="assets/screenshots/lab/3d-visualization.png" alt="3D Visualization" width="600"/><br/>
   <em>Advanced data visualizations</em>
@@ -176,6 +184,10 @@ Both applications are available for the following platforms:
 
 ### Latest Releases
 
+> **⚠️ Note: Code Signing In Progress**
+>
+> We are currently in the process of signing our builds. Until signing is complete, you may see security warnings on macOS and Windows. This is normal for new software awaiting certification. See the [macOS Security Guide](#macos-security-guide) below for detailed instructions.
+
 Downloads are available on the [Releases](../../releases) page.
 
 ### Installation Instructions
@@ -187,7 +199,7 @@ Downloads are available on the [Releases](../../releases) page.
    - **Universal**: Works on both (larger file size)
 2. Extract the `.zip` file
 3. Drag the application to your Applications folder
-4. First launch: Right-click the app and select "Open" to bypass Gatekeeper
+4. **First launch requires security approval** — See [macOS Security Guide](#macos-security-guide) below
 
 #### Windows
 1. Download the `.exe` installer or `.zip` portable version
@@ -219,6 +231,66 @@ tar -xzf calliope-*.tar.gz
 cd calliope-*
 ./calliope-ide  # or ./calliope-lab
 ```
+
+---
+
+## macOS Security Guide
+
+While our code signing is being finalized, macOS will show several security prompts when you first launch Calliope apps. **This is expected behavior** for apps not yet registered with Apple. Here's what to expect and how to proceed:
+
+### Step 1: Open via System Settings
+
+When you first try to open the app, macOS will block it. Go to **System Settings → Privacy & Security** and scroll down to see the blocked app notice. Click **"Open Anyway"**.
+
+<p align="center">
+  <img src="assets/screenshots/security/ide/open-anyway.png" alt="System Settings Security" width="500"/>
+</p>
+
+### Step 2: Confirm in Gatekeeper Dialog
+
+A dialog will appear asking you to confirm. Click **"Open Anyway"** to proceed.
+
+<p align="center">
+  <img src="assets/screenshots/security/ide/gatekeeper-dialog.png" alt="Gatekeeper Dialog" width="350"/>
+</p>
+
+### Step 3: Authenticate with Touch ID or Password
+
+macOS will ask for administrator authentication (Touch ID or password) to confirm you want to open the app.
+
+<p align="center">
+  <img src="assets/screenshots/security/ide/privacy-auth.png" alt="Privacy Authentication" width="350"/>
+</p>
+
+### Step 4: Allow Keychain Access (for API Key Storage)
+
+Calliope apps securely store your API keys in your macOS Keychain. When prompted, enter your login keychain password and click **"Always Allow"** to grant permanent access.
+
+<p align="center">
+  <img src="assets/screenshots/security/ide/keychain-access.png" alt="Keychain Access" width="500"/>
+</p>
+
+> **Why Keychain?** Your API keys are encrypted and stored in Apple's secure Keychain, the same system that protects your passwords and certificates. This ensures your credentials are never stored in plain text.
+
+### Step 5: Allow App Data Access (Optional)
+
+You may see a prompt asking to allow the app to access data from other apps. Click **"Allow"** if you want features like browser integration.
+
+<p align="center">
+  <img src="assets/screenshots/security/ide/app-data-access.png" alt="App Data Access" width="350"/>
+</p>
+
+### After Initial Setup
+
+Once you've completed these steps, the app will open normally on subsequent launches. You only need to go through this process once per app.
+
+### Calliope AI Lab - Additional Permissions
+
+Calliope AI Lab follows the same security approval process as the IDE. You may also see prompts for folder access (e.g., Desktop, Documents) when working with local data files. Click **"Allow"** to enable data analysis on files in those locations.
+
+<p align="center">
+  <img src="assets/screenshots/security/lab/folder-access.png" alt="Folder Access" width="350"/>
+</p>
 
 ---
 
@@ -317,6 +389,16 @@ Yes! Core editing/notebook features work offline. For AI features, you can run <
 <details>
 <summary><b>Is my data sent anywhere?</b></summary>
 Your data stays on your machine. When you use AI features, your prompts go directly to your chosen AI provider — not through our servers.
+</details>
+
+<details>
+<summary><b>Why do I see security warnings on macOS?</b></summary>
+We are currently in the process of getting our builds signed with Apple. Until that's complete, macOS Gatekeeper will show warnings for unverified developers. This is normal — see our <a href="#macos-security-guide">macOS Security Guide</a> for step-by-step instructions to open the app safely.
+</details>
+
+<details>
+<summary><b>Why does the app ask for Keychain access?</b></summary>
+Your API keys are stored securely in the macOS Keychain (Apple's encrypted credential storage). This is far more secure than storing keys in plain text config files. Click "Always Allow" to grant permanent access.
 </details>
 
 <details>
