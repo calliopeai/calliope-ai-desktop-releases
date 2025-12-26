@@ -1,0 +1,77 @@
+name: Update latest.json
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+jobs:
+  update-latest:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate latest.json
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # Fetch all releases
+          releases=$(gh release list --json tagName,name,publishedAt,isDraft,isPrerelease)
+
+          # Find latest IDE release (tag starts with ide-)
+          ide_tag=$(echo "$releases" | jq -r '[.[] | select(.tagName | startswith("ide-")) | select(.isDraft == false) | select(.isPrerelease == false)] | sort_by(.publishedAt) | reverse | .[0].tagName // empty')
+
+          # Find latest Lab release (tag starts with lab-)
+          lab_tag=$(echo "$releases" | jq -r '[.[] | select(.tagName | startswith("lab-")) | select(.isDraft == false) | select(.isPrerelease == false)] | sort_by(.publishedAt) | reverse | .[0].tagName // empty')
+
+          # Get IDE release details
+          if [ -n "$ide_tag" ]; then
+            ide_version=$(echo "$ide_tag" | sed 's/ide-v//')
+            ide_assets=$(gh release view "$ide_tag" --json assets --jq '.assets[] | {name: .name, url: .url, size: .size}' | jq -s '.')
+            ide_published=$(gh release view "$ide_tag" --json publishedAt --jq '.publishedAt')
+          fi
+
+          # Get Lab release details
+          if [ -n "$lab_tag" ]; then
+            lab_version=$(echo "$lab_tag" | sed 's/lab-v//')
+            lab_assets=$(gh release view "$lab_tag" --json assets --jq '.assets[] | {name: .name, url: .url, size: .size}' | jq -s '.')
+            lab_published=$(gh release view "$lab_tag" --json publishedAt --jq '.publishedAt')
+          fi
+
+          # Build JSON
+          cat > latest.json << EOF
+          {
+            "generated": "$(date -u +%Y-%m-%dT%H:%M:%SZ)",
+            "ide": {
+              "version": "${ide_version:-null}",
+              "tag": "${ide_tag:-null}",
+              "publishedAt": "${ide_published:-null}",
+              "releaseUrl": "https://github.com/${{ github.repository }}/releases/tag/${ide_tag}",
+              "assets": ${ide_assets:-[]}
+            },
+            "lab": {
+              "version": "${lab_version:-null}",
+              "tag": "${lab_tag:-null}",
+              "publishedAt": "${lab_published:-null}",
+              "releaseUrl": "https://github.com/${{ github.repository }}/releases/tag/${lab_tag}",
+              "assets": ${lab_assets:-[]}
+            }
+          }
+          EOF
+
+          # Pretty print
+          cat latest.json | jq '.' > latest.json.tmp && mv latest.json.tmp latest.json
+
+          echo "Generated latest.json:"
+          cat latest.json
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add latest.json
+          git diff --staged --quiet || git commit -m "chore: update latest.json"
+          git push

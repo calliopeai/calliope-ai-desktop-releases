@@ -1,0 +1,88 @@
+name: Update Website Version Links
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Release tag to update (e.g., ide-v1.2.5 or lab-v1.2.2)'
+        required: true
+
+jobs:
+  update-site:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Determine release info
+        id: release
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            TAG="${{ github.event.inputs.tag }}"
+          else
+            TAG="${{ github.event.release.tag_name }}"
+          fi
+
+          echo "tag=$TAG" >> $GITHUB_OUTPUT
+
+          if [[ "$TAG" == ide-* ]]; then
+            echo "app=ide" >> $GITHUB_OUTPUT
+            echo "version=${TAG#ide-v}" >> $GITHUB_OUTPUT
+            echo "App: IDE, Version: ${TAG#ide-v}"
+          elif [[ "$TAG" == lab-* ]]; then
+            echo "app=lab" >> $GITHUB_OUTPUT
+            echo "version=${TAG#lab-v}" >> $GITHUB_OUTPUT
+            echo "App: Lab, Version: ${TAG#lab-v}"
+          else
+            echo "Unknown tag format: $TAG"
+            exit 1
+          fi
+
+      - name: Checkout website repo
+        uses: actions/checkout@v4
+        with:
+          repository: calliopeai/calliope-site
+          token: ${{ secrets.PAT_CALLIOPE_CI }}
+          path: site
+
+      - name: Update version links
+        run: |
+          cd site
+          FILE="content/download/_index.md"
+          APP="${{ steps.release.outputs.app }}"
+          TAG="${{ steps.release.outputs.tag }}"
+          VERSION="${{ steps.release.outputs.version }}"
+
+          echo "Updating $APP to $TAG (version $VERSION)"
+
+          if [ "$APP" = "ide" ]; then
+            # Update IDE release tag link
+            sed -i "s|releases/tag/ide-v[0-9.]*|releases/tag/$TAG|g" "$FILE"
+          elif [ "$APP" = "lab" ]; then
+            # Update Lab release tag link
+            sed -i "s|releases/tag/lab-v[0-9.]*|releases/tag/$TAG|g" "$FILE"
+            # Update direct download links for Lab (DMG example)
+            sed -i "s|LAB-Calliope-AI-Lab-[0-9.]*-|LAB-Calliope-AI-Lab-$VERSION-|g" "$FILE"
+          fi
+
+          echo "Changes made:"
+          git diff "$FILE" || echo "No changes detected"
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          path: site
+          token: ${{ secrets.PAT_CALLIOPE_CI }}
+          commit-message: "chore: update ${{ steps.release.outputs.app }} to ${{ steps.release.outputs.tag }}"
+          branch: "release/${{ steps.release.outputs.tag }}"
+          delete-branch: true
+          title: "Update ${{ steps.release.outputs.app }} to ${{ steps.release.outputs.tag }}"
+          body: |
+            Automated PR to update download links for **${{ steps.release.outputs.app }}** release.
+
+            - Tag: `${{ steps.release.outputs.tag }}`
+            - Version: `${{ steps.release.outputs.version }}`
+            - Release: https://github.com/${{ github.repository }}/releases/tag/${{ steps.release.outputs.tag }}
+
+            ---
+            *This PR was automatically created by the [update-site-versions](https://github.com/${{ github.repository }}/actions/workflows/update-site-versions.yml) workflow.*
