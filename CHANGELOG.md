@@ -7,6 +7,32 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.2.5] - 2025-12-28
+
+> **⚠️ Important: Unsigned Builds**
+>
+> We are currently awaiting our code signing certificates. Builds are unsigned, which means:
+> - **macOS**: Right-click the app and select "Open" to bypass Gatekeeper warnings
+> - **Windows**: Click "More info" → "Run anyway" when SmartScreen appears
+>
+> Code signing will be added in an upcoming release. We appreciate your patience!
+
+### Calliope AI IDE
+
+#### Fixed
+- **Python Agent Backends Now Available**
+  - AutoAgent, DeepCode, and FastAgent now show as available in One-Shot Task
+  - Backends detect Python 3.10+ or Docker availability (lazy server start)
+  - CLI agents removed from One-Shot modal (designed for interactive terminal use)
+
+#### Improved
+- **UI Polish**
+  - More compact header dropdowns (mode and model selectors)
+  - Optimized walkthrough images for faster loading
+  - Cleaner, less cluttered header appearance
+
+---
+
 ## [1.2.4] - 2025-12-24
 
 > **⚠️ Important: Unsigned Builds**
