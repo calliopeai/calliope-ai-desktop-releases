@@ -207,6 +207,12 @@ Downloads are available on the [Releases](../../releases) page.
 3. If SmartScreen appears, click "More info" → "Run anyway"
 4. Follow the installation wizard
 
+**PowerShell Alternative (Advanced Users):**
+```powershell
+# Remove the "downloaded from internet" marker
+Unblock-File -Path "$env:USERPROFILE\Downloads\Calliope AI IDE Setup.exe"
+```
+
 #### Linux
 **DEB (Debian/Ubuntu):**
 ```bash
@@ -283,6 +289,22 @@ You may see a prompt asking to allow the app to access data from other apps. Cli
 ### After Initial Setup
 
 Once you've completed these steps, the app will open normally on subsequent launches. You only need to go through this process once per app.
+
+### Terminal Alternative (Advanced Users)
+
+If you prefer the command line, you can remove the quarantine attribute directly:
+
+```bash
+# For Calliope AI IDE
+xattr -dr com.apple.quarantine /Applications/Calliope\ AI\ IDE.app
+
+# For Calliope AI Lab
+xattr -dr com.apple.quarantine /Applications/Calliope\ AI\ Lab.app
+```
+
+This removes the `com.apple.quarantine` extended attribute that macOS adds to downloaded files, bypassing Gatekeeper warnings. The `-r` flag applies recursively to all files within the app bundle.
+
+> **Note:** You'll still be prompted for Keychain access on first launch (Step 4 above).
 
 ### Calliope AI Lab - Additional Permissions
 

@@ -98,9 +98,11 @@ When using Calliope AI desktop applications:
 Current releases are **unsigned**, which means:
 
 - **macOS**: Gatekeeper will show warnings on first launch
-  - Solution: Right-click → "Open" to bypass
+  - Solution: Go to System Settings → Privacy & Security → "Open Anyway"
+  - Terminal alternative: `xattr -dr com.apple.quarantine /Applications/Calliope\ AI\ IDE.app`
 - **Windows**: SmartScreen may show warnings
   - Solution: Click "More info" → "Run anyway"
+  - PowerShell alternative: `Unblock-File -Path "C:\path\to\Calliope AI IDE Setup.exe"`
 
 This is a known limitation and **not a security vulnerability**. Future releases will include code signing.
 
