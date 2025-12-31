@@ -1,30 +1,30 @@
 {
-  "generated": "2025-12-29T02:11:08Z",
+  "generated": "2025-12-31T20:58:51Z",
   "ide": {
-    "version": "1.2.5",
-    "tag": "ide-v1.2.5",
-    "publishedAt": "2025-12-29T01:52:42Z",
-    "releaseUrl": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/tag/ide-v1.2.5",
+    "version": "1.2.7",
+    "tag": "ide-v1.2.7",
+    "publishedAt": "2025-12-31T20:58:40Z",
+    "releaseUrl": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/tag/ide-v1.2.7",
     "assets": [
       {
         "name": "calliope-ide-darwin-arm64.zip",
-        "size": 166704029,
-        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/ide-v1.2.5/calliope-ide-darwin-arm64.zip"
+        "size": 166797241,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/ide-v1.2.7/calliope-ide-darwin-arm64.zip"
       },
       {
         "name": "calliope-ide-darwin-x64.zip",
-        "size": 172212911,
-        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/ide-v1.2.5/calliope-ide-darwin-x64.zip"
+        "size": 172306077,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/ide-v1.2.7/calliope-ide-darwin-x64.zip"
       },
       {
         "name": "calliope-ide-linux-x64.deb",
-        "size": 114060536,
-        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/ide-v1.2.5/calliope-ide-linux-x64.deb"
+        "size": 114037100,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/ide-v1.2.7/calliope-ide-linux-x64.deb"
       },
       {
         "name": "calliope-ide-win32-x64.zip",
-        "size": 184617893,
-        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/ide-v1.2.5/calliope-ide-win32-x64.zip"
+        "size": 185035020,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/ide-v1.2.7/calliope-ide-win32-x64.zip"
       }
     ]
   },
