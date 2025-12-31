@@ -174,9 +174,9 @@ Both applications are available for the following platforms:
 
 | Platform | Architectures | Package Formats |
 |----------|--------------|-----------------|
-| **macOS** | Intel (x64), Apple Silicon (ARM64), Universal | `.zip` (application bundle) |
-| **Windows** | x64, ARM64 | `.exe` installer, `.zip` portable |
-| **Linux** | x64, ARM64 | `.deb`, `.rpm`, `.tar.gz`, `.AppImage` |
+| **macOS** | Intel (x64), Apple Silicon (ARM64) | `.zip` (application bundle) |
+| **Windows** | x64 | `.zip` portable |
+| **Linux** | x64 | `.deb`, `.rpm` |
 
 ---
 
