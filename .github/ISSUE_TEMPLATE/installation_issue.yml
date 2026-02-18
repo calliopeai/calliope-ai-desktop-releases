@@ -34,7 +34,6 @@ body:
       label: Operating System
       description: What operating system are you using?
       options:
-        - macOS (Intel x64)
         - macOS (Apple Silicon ARM64)
         - Windows (x64)
         - Windows (ARM64)
@@ -48,7 +47,7 @@ body:
     attributes:
       label: OS Version
       description: What version of the operating system?
-      placeholder: "e.g., macOS 14.1, Windows 11 23H2, Ubuntu 22.04"
+      placeholder: "e.g., macOS 15.1, Windows 11 23H2, Ubuntu 22.04"
     validations:
       required: true
 
