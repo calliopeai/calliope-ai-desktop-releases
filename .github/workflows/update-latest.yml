@@ -23,57 +23,82 @@ jobs:
           # Fetch all releases
           releases=$(gh release list --json tagName,name,publishedAt,isDraft,isPrerelease)
 
-          # Find latest IDE release (tag starts with ide-)
-          ide_tag=$(echo "$releases" | jq -r '[.[] | select(.tagName | startswith("ide-")) | select(.isDraft == false) | select(.isPrerelease == false)] | sort_by(.publishedAt) | reverse | .[0].tagName // empty')
+          # App prefixes to scan
+          APPS=("ide" "lab" "chat" "loadr")
 
-          # Find latest Lab release (tag starts with lab-)
-          lab_tag=$(echo "$releases" | jq -r '[.[] | select(.tagName | startswith("lab-")) | select(.isDraft == false) | select(.isPrerelease == false)] | sort_by(.publishedAt) | reverse | .[0].tagName // empty')
+          # Build each app's JSON block
+          json_blocks=""
+          for app in "${APPS[@]}"; do
+            tag=$(echo "$releases" | jq -r "[.[] | select(.tagName | startswith(\"${app}-\")) | select(.isDraft == false) | select(.isPrerelease == false)] | sort_by(.publishedAt) | reverse | .[0].tagName // empty")
 
-          # Get IDE release details
-          if [ -n "$ide_tag" ]; then
-            ide_version=$(echo "$ide_tag" | sed 's/ide-v//')
-            ide_assets=$(gh release view "$ide_tag" --json assets --jq '.assets[] | {name: .name, url: .url, size: .size}' | jq -s '.')
-            ide_published=$(gh release view "$ide_tag" --json publishedAt --jq '.publishedAt')
-          fi
+            if [ -n "$tag" ]; then
+              version=$(echo "$tag" | sed "s/${app}-v//")
+              assets=$(gh release view "$tag" --json assets --jq '.assets[] | {name: .name, url: .url, size: .size}' | jq -s '.')
+              published=$(gh release view "$tag" --json publishedAt --jq '.publishedAt')
 
-          # Get Lab release details
-          if [ -n "$lab_tag" ]; then
-            lab_version=$(echo "$lab_tag" | sed 's/lab-v//')
-            lab_assets=$(gh release view "$lab_tag" --json assets --jq '.assets[] | {name: .name, url: .url, size: .size}' | jq -s '.')
-            lab_published=$(gh release view "$lab_tag" --json publishedAt --jq '.publishedAt')
-          fi
+              block=$(jq -n \
+                --arg version "$version" \
+                --arg tag "$tag" \
+                --arg publishedAt "$published" \
+                --arg releaseUrl "https://github.com/${{ github.repository }}/releases/tag/${tag}" \
+                --argjson assets "$assets" \
+                '{version: $version, tag: $tag, publishedAt: $publishedAt, releaseUrl: $releaseUrl, assets: $assets}')
+            else
+              block=$(jq -n '{version: null, tag: null, publishedAt: null, releaseUrl: null, assets: []}')
+            fi
 
-          # Build JSON
-          cat > latest.json << EOF
-          {
-            "generated": "$(date -u +%Y-%m-%dT%H:%M:%SZ)",
-            "ide": {
-              "version": "${ide_version:-null}",
-              "tag": "${ide_tag:-null}",
-              "publishedAt": "${ide_published:-null}",
-              "releaseUrl": "https://github.com/${{ github.repository }}/releases/tag/${ide_tag}",
-              "assets": ${ide_assets:-[]}
-            },
-            "lab": {
-              "version": "${lab_version:-null}",
-              "tag": "${lab_tag:-null}",
-              "publishedAt": "${lab_published:-null}",
-              "releaseUrl": "https://github.com/${{ github.repository }}/releases/tag/${lab_tag}",
-              "assets": ${lab_assets:-[]}
-            }
-          }
-          EOF
+            if [ -z "$json_blocks" ]; then
+              json_blocks="\"${app}\": ${block}"
+            else
+              json_blocks="${json_blocks}, \"${app}\": ${block}"
+            fi
+          done
 
-          # Pretty print
-          cat latest.json | jq '.' > latest.json.tmp && mv latest.json.tmp latest.json
+          # Assemble final JSON
+          echo "{\"generated\": \"$(date -u +%Y-%m-%dT%H:%M:%SZ)\", ${json_blocks}}" | jq '.' > latest.json
 
           echo "Generated latest.json:"
           cat latest.json
+
+      - name: Update README version table
+        run: |
+          # Read latest.json and build the version table
+          TABLE="| Application | Latest Version | Released |\n"
+          TABLE+="|-------------|---------------|----------|\n"
+
+          for app in ide lab chat loadr; do
+            version=$(jq -r ".${app}.version // empty" latest.json)
+            published=$(jq -r ".${app}.publishedAt // empty" latest.json)
+
+            case "$app" in
+              ide)   name="Calliope AI IDE" ;;
+              lab)   name="Calliope AI Lab" ;;
+              chat)  name="Calliope AI Chat" ;;
+              loadr) name="Calliope AI Loadr" ;;
+            esac
+
+            if [ -n "$version" ] && [ "$version" != "null" ]; then
+              date_str=$(echo "$published" | cut -dT -f1)
+              TABLE+="| **${name}** | \`v${version}\` | ${date_str} |\n"
+            else
+              TABLE+="| **${name}** | — | — |\n"
+            fi
+          done
+
+          # Replace content between VERSIONS markers in README
+          awk -v table="$TABLE" '
+            /<!-- VERSIONS:START -->/ { print; printf "%s", table; skip=1; next }
+            /<!-- VERSIONS:END -->/ { skip=0 }
+            !skip { print }
+          ' README.md > README.md.tmp && mv README.md.tmp README.md
+
+          echo "Updated README version table:"
+          sed -n '/VERSIONS:START/,/VERSIONS:END/p' README.md
 
       - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add latest.json
+          git add latest.json README.md
           git diff --staged --quiet || git commit -m "chore: update latest.json"
           git push

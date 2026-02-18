@@ -33,6 +33,14 @@ jobs:
             echo "app=lab" >> $GITHUB_OUTPUT
             echo "version=${TAG#lab-v}" >> $GITHUB_OUTPUT
             echo "App: Lab, Version: ${TAG#lab-v}"
+          elif [[ "$TAG" == chat-* ]]; then
+            echo "app=chat" >> $GITHUB_OUTPUT
+            echo "version=${TAG#chat-v}" >> $GITHUB_OUTPUT
+            echo "App: Chat, Version: ${TAG#chat-v}"
+          elif [[ "$TAG" == loadr-* ]]; then
+            echo "app=loadr" >> $GITHUB_OUTPUT
+            echo "version=${TAG#loadr-v}" >> $GITHUB_OUTPUT
+            echo "App: Loadr, Version: ${TAG#loadr-v}"
           else
             echo "Unknown tag format: $TAG"
             exit 1
@@ -55,13 +63,11 @@ jobs:
 
           echo "Updating $APP to $TAG (version $VERSION)"
 
-          if [ "$APP" = "ide" ]; then
-            # Update IDE release tag link
-            sed -i "s|releases/tag/ide-v[0-9.]*|releases/tag/$TAG|g" "$FILE"
-          elif [ "$APP" = "lab" ]; then
-            # Update Lab release tag link
-            sed -i "s|releases/tag/lab-v[0-9.]*|releases/tag/$TAG|g" "$FILE"
-            # Update direct download links for Lab (DMG example)
+          # Update release tag link for the app
+          sed -i "s|releases/tag/${APP}-v[0-9.]*|releases/tag/$TAG|g" "$FILE"
+
+          # App-specific direct download link updates
+          if [ "$APP" = "lab" ]; then
             sed -i "s|LAB-Calliope-AI-Lab-[0-9.]*-|LAB-Calliope-AI-Lab-$VERSION-|g" "$FILE"
           fi
 

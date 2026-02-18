@@ -40,16 +40,6 @@
         "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/lab-v1.2.5/calliope-lab-darwin-arm64.zip"
       },
       {
-        "name": "calliope-lab-darwin-x64.dmg",
-        "size": 1044722700,
-        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/lab-v1.2.5/calliope-lab-darwin-x64.dmg"
-      },
-      {
-        "name": "calliope-lab-darwin-x64.zip",
-        "size": 1083224153,
-        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/lab-v1.2.5/calliope-lab-darwin-x64.zip"
-      },
-      {
         "name": "calliope-lab-linux-arm64.AppImage",
         "size": 1014611523,
         "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/lab-v1.2.5/calliope-lab-linux-arm64.AppImage"
@@ -85,5 +75,19 @@
         "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/lab-v1.2.5/calliope-lab-win32-x64.exe"
       }
     ]
+  },
+  "chat": {
+    "version": null,
+    "tag": null,
+    "publishedAt": null,
+    "releaseUrl": null,
+    "assets": []
+  },
+  "loadr": {
+    "version": null,
+    "tag": null,
+    "publishedAt": null,
+    "releaseUrl": null,
+    "assets": []
   }
 }

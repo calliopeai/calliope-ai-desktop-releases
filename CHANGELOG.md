@@ -137,8 +137,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Amplifier - AI development environment enhancements
 
 - **Platform Support**
-  - macOS (Intel x64, Apple Silicon ARM64, Universal)
-  - Windows (x64, ARM64)
+  - macOS (Apple Silicon ARM64)
+  - Windows (x64)
   - Linux (x64, ARM64) with multiple package formats
 
 #### Technical Highlights
@@ -193,7 +193,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Configurable data directories
 
 - **Platform Support**
-  - macOS (Intel x64, Apple Silicon ARM64, Universal)
+  - macOS (Apple Silicon ARM64)
   - Windows (x64)
   - Linux (x64, ARM64)
   - Multiple package formats (DMG, DEB, RPM, AppImage, TAR.GZ)

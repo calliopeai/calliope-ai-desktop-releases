@@ -137,8 +137,7 @@ chmod +x calliope-ide  # or calliope-lab
    - Linux with glibc 2.28+ (Ubuntu 20.04+, Fedora 29+)
 
 2. **Verify architecture match**
-   - Apple Silicon Mac? Download ARM64 version
-   - Intel Mac? Download x64 version
+   - macOS requires Apple Silicon (M1/M2/M3/M4) — Intel Macs are no longer supported
    - Check with: `uname -m` (macOS/Linux) or System Information (Windows)
 
 3. **Check logs**

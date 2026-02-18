@@ -12,6 +12,15 @@
   **100% Free Desktop Apps — BYOK — API Pricing, No Middleman**
 </div>
 
+<!-- VERSIONS:START -->
+| Application | Latest Version | Released |
+|-------------|---------------|----------|
+| **Calliope AI IDE** | `v1.3.0` | 2026-02-18 |
+| **Calliope AI Lab** | `v1.2.5` | 2026-02-01 |
+| **Calliope AI Chat** | — | — |
+| **Calliope AI Loadr** | — | — |
+<!-- VERSIONS:END -->
+
 ---
 
 ## Overview
@@ -168,15 +177,45 @@ Calliope AI Lab combines a professional notebook interface with intelligent data
 
 ---
 
+### 💬 Calliope AI Chat
+
+**AI Chat Interface**
+
+A lightweight, dedicated chat application for conversing with AI models. Fast, focused, and distraction-free.
+
+**Key Features:**
+- Multi-provider AI chat (OpenAI, Anthropic, Google, Ollama)
+- Conversation history and session management
+- BYOK — use your own API keys
+- Offline capable with Ollama
+
+---
+
+### ⚡ Calliope AI Loadr
+
+**Data Loading & Pipeline Tool**
+
+A streamlined tool for data ingestion, transformation, and pipeline management.
+
+**Key Features:**
+- Data import from multiple sources
+- Pipeline configuration and scheduling
+- Integration with Calliope AI Lab
+- Local-first data processing
+
+---
+
 ## Supported Platforms
 
-Both applications are available for the following platforms:
+All applications are available for the following platforms:
 
 | Platform | Architectures | Package Formats |
 |----------|--------------|-----------------|
-| **macOS** | Intel (x64), Apple Silicon (ARM64) | `.zip` (application bundle) |
+| **macOS** | Apple Silicon (ARM64) | `.dmg`, `.zip` |
 | **Windows** | x64 | `.zip` portable |
-| **Linux** | x64 | `.deb`, `.rpm` |
+| **Linux** | x64, ARM64 | `.deb`, `.rpm`, `.AppImage`, `.tar.gz` |
+
+> **Note:** macOS Intel (x64) is no longer supported. Apple Silicon (M1/M2/M3/M4) is required.
 
 ---
 
@@ -192,12 +231,11 @@ Downloads are available on the [Releases](../../releases) page.
 
 ### Installation Instructions
 
-#### macOS
-1. Download the appropriate `.zip` file for your architecture:
-   - **Apple Silicon (M1/M2/M3)**: Download the ARM64 version
-   - **Intel Mac**: Download the x64 version
-   - **Universal**: Works on both (larger file size)
-2. Extract the `.zip` file
+#### macOS (Apple Silicon Only)
+1. Download the `.dmg` or `.zip` file (ARM64)
+   - Requires Apple Silicon (M1/M2/M3/M4)
+   - **Intel Macs are no longer supported**
+2. Extract the `.zip` or mount the `.dmg` file
 3. Drag the application to your Applications folder
 4. **First launch requires security approval** — See [macOS Security Guide](#macos-security-guide) below
 
