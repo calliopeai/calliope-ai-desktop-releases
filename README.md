@@ -193,15 +193,17 @@ A lightweight, dedicated chat application for conversing with AI models. Fast, f
 
 ### ⚡ Calliope AI Loadr
 
-**Data Loading & Pipeline Tool**
+**AI-Powered Data Management Studio**
 
-A streamlined tool for data ingestion, transformation, and pipeline management.
+A modern database client and data management studio with built-in AI assistance. Connect to PostgreSQL, MySQL, Snowflake, MSSQL and more — write SQL with AI help, explore schemas, and manage your data. Think DataGrip meets AI copilot.
 
 **Key Features:**
-- Data import from multiple sources
-- Pipeline configuration and scheduling
-- Integration with Calliope AI Lab
-- Local-first data processing
+- Multi-database support (PostgreSQL, MySQL, Snowflake, MSSQL)
+- AI copilot with NL-to-SQL, schema exploration, and agent tools
+- Monaco SQL editor with syntax highlighting
+- Data sources and targets for ETL workflows
+- BYOK — bring your own AI keys (Anthropic, OpenAI, Google, AWS Bedrock, Ollama, and more)
+- macOS build is signed and notarized by Apple
 
 ---
 
