@@ -1,24 +1,29 @@
 {
-  "generated": "2026-02-18T04:03:26Z",
+  "generated": "2026-02-24T02:25:51Z",
   "ide": {
     "version": "1.3.0",
     "tag": "ide-v1.3.0",
-    "publishedAt": "2026-02-18T04:03:13Z",
+    "publishedAt": "2026-02-18T21:17:42Z",
     "releaseUrl": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/tag/ide-v1.3.0",
     "assets": [
       {
+        "name": "calliope-ide-darwin-arm64.zip",
+        "size": 174169213,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/ide-v1.3.0/calliope-ide-darwin-arm64.zip"
+      },
+      {
         "name": "calliope-ide-linux-arm64.deb",
-        "size": 110788732,
+        "size": 110787968,
         "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/ide-v1.3.0/calliope-ide-linux-arm64.deb"
       },
       {
         "name": "calliope-ide-linux-x64.deb",
-        "size": 128403452,
+        "size": 128419784,
         "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/ide-v1.3.0/calliope-ide-linux-x64.deb"
       },
       {
         "name": "calliope-ide-win32-x64.zip",
-        "size": 210584405,
+        "size": 210804497,
         "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/ide-v1.3.0/calliope-ide-win32-x64.zip"
       }
     ]
@@ -38,6 +43,16 @@
         "name": "calliope-lab-darwin-arm64.zip",
         "size": 1085758568,
         "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/lab-v1.2.5/calliope-lab-darwin-arm64.zip"
+      },
+      {
+        "name": "calliope-lab-darwin-x64.dmg",
+        "size": 1044722700,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/lab-v1.2.5/calliope-lab-darwin-x64.dmg"
+      },
+      {
+        "name": "calliope-lab-darwin-x64.zip",
+        "size": 1083224153,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/lab-v1.2.5/calliope-lab-darwin-x64.zip"
       },
       {
         "name": "calliope-lab-linux-arm64.AppImage",
@@ -84,10 +99,51 @@
     "assets": []
   },
   "loadr": {
-    "version": null,
-    "tag": null,
-    "publishedAt": null,
-    "releaseUrl": null,
-    "assets": []
+    "version": "1.0.1",
+    "tag": "loadr-v1.0.1",
+    "publishedAt": "2026-02-24T02:25:39Z",
+    "releaseUrl": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/tag/loadr-v1.0.1",
+    "assets": [
+      {
+        "name": "loadr-desktop-darwin-arm64.dmg",
+        "size": 296762925,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/loadr-v1.0.1/loadr-desktop-darwin-arm64.dmg"
+      },
+      {
+        "name": "loadr-desktop-darwin-arm64.zip",
+        "size": 267822432,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/loadr-v1.0.1/loadr-desktop-darwin-arm64.zip"
+      },
+      {
+        "name": "loadr-desktop-linux-arm64.AppImage",
+        "size": 327888055,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/loadr-v1.0.1/loadr-desktop-linux-arm64.AppImage"
+      },
+      {
+        "name": "loadr-desktop-linux-arm64.tar.gz",
+        "size": 306778890,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/loadr-v1.0.1/loadr-desktop-linux-arm64.tar.gz"
+      },
+      {
+        "name": "loadr-desktop-linux-x64.AppImage",
+        "size": 334745400,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/loadr-v1.0.1/loadr-desktop-linux-x64.AppImage"
+      },
+      {
+        "name": "loadr-desktop-linux-x64.deb",
+        "size": 213655518,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/loadr-v1.0.1/loadr-desktop-linux-x64.deb"
+      },
+      {
+        "name": "loadr-desktop-linux-x64.tar.gz",
+        "size": 307922502,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/loadr-v1.0.1/loadr-desktop-linux-x64.tar.gz"
+      },
+      {
+        "name": "loadr-desktop-win32-x64.exe",
+        "size": 220220389,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/loadr-v1.0.1/loadr-desktop-win32-x64.exe"
+      }
+    ]
   }
 }
