@@ -1,5 +1,5 @@
 {
-  "generated": "2026-02-25T06:05:38Z",
+  "generated": "2026-02-26T15:47:30Z",
   "ide": {
     "version": "1.3.0",
     "tag": "ide-v1.3.0",
@@ -29,67 +29,11 @@
     ]
   },
   "lab": {
-    "version": "1.2.5",
-    "tag": "lab-v1.2.5",
-    "publishedAt": "2026-02-01T06:11:43Z",
-    "releaseUrl": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/tag/lab-v1.2.5",
-    "assets": [
-      {
-        "name": "calliope-lab-darwin-arm64.dmg",
-        "size": 1065554185,
-        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/lab-v1.2.5/calliope-lab-darwin-arm64.dmg"
-      },
-      {
-        "name": "calliope-lab-darwin-arm64.zip",
-        "size": 1085758568,
-        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/lab-v1.2.5/calliope-lab-darwin-arm64.zip"
-      },
-      {
-        "name": "calliope-lab-darwin-x64.dmg",
-        "size": 1044722700,
-        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/lab-v1.2.5/calliope-lab-darwin-x64.dmg"
-      },
-      {
-        "name": "calliope-lab-darwin-x64.zip",
-        "size": 1083224153,
-        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/lab-v1.2.5/calliope-lab-darwin-x64.zip"
-      },
-      {
-        "name": "calliope-lab-linux-arm64.AppImage",
-        "size": 1014611523,
-        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/lab-v1.2.5/calliope-lab-linux-arm64.AppImage"
-      },
-      {
-        "name": "calliope-lab-linux-arm64.deb",
-        "size": 901419152,
-        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/lab-v1.2.5/calliope-lab-linux-arm64.deb"
-      },
-      {
-        "name": "calliope-lab-linux-arm64.tar.gz",
-        "size": 1126413532,
-        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/lab-v1.2.5/calliope-lab-linux-arm64.tar.gz"
-      },
-      {
-        "name": "calliope-lab-linux-x64.AppImage",
-        "size": 1093709518,
-        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/lab-v1.2.5/calliope-lab-linux-x64.AppImage"
-      },
-      {
-        "name": "calliope-lab-linux-x64.deb",
-        "size": 838374996,
-        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/lab-v1.2.5/calliope-lab-linux-x64.deb"
-      },
-      {
-        "name": "calliope-lab-linux-x64.tar.gz",
-        "size": 1212352787,
-        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/lab-v1.2.5/calliope-lab-linux-x64.tar.gz"
-      },
-      {
-        "name": "calliope-lab-win32-x64.exe",
-        "size": 1528592202,
-        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/lab-v1.2.5/calliope-lab-win32-x64.exe"
-      }
-    ]
+    "version": "1.3.1",
+    "tag": "lab-v1.3.1",
+    "publishedAt": "2026-02-26T15:47:16Z",
+    "releaseUrl": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/tag/lab-v1.3.1",
+    "assets": []
   },
   "chat": {
     "version": "1.0.0",
