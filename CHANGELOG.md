@@ -292,7 +292,6 @@ Future releases will include upgrade instructions and migration guides as needed
 ## What's Next?
 
 ### Planned for Next Release
-- Claude Agent SDK backend integration
 - OpenAI Agents SDK backend (TypeScript native)
 - Execution-aware UI with DAG progress view
 - End-to-end agent task lifecycle tests
