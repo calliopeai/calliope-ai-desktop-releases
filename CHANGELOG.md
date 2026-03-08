@@ -7,6 +7,43 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.4.0] - 2026-03-08
+
+> **✅ All macOS builds are now signed and notarized by Apple.**
+
+### Calliope AI IDE
+
+#### Added
+- **Full AWS Bedrock Support**
+  - Complete credential chain: Bedrock API Key (bearer token) → IAM keys → AWS Profile → environment → default chain
+  - New Bedrock API Key field in settings panel — paste a bearer token and go
+  - Model output limits for Bedrock-hosted Claude models (Haiku 4096, Sonnet 8192, Opus 16384)
+
+- **Context Window Management**
+  - Automatic context compaction prevents "prompt is too long" errors during long agent runs
+  - Per-tool-result size cap (50K chars) prevents any single file read from blowing out context
+  - Progressive compaction: truncates old tool results first, then drops middle history
+  - Model-aware limits (Claude 200K, GPT-4o 128K, Gemini 1M)
+
+- **JupyterHub Native Sharing**
+  - Complete rewrite using JupyterHub 5.x native sharing API
+  - Share codes: generate invitation links redeemable through JupyterHub
+  - Direct shares: grant access to specific users by username
+  - Permission levels: View Only, Full Access, Terminal Access
+  - New commands: Share Workspace, Manage Active Shares
+
+#### Fixed
+- **File Path Resolution** — agents in containers no longer produce EROFS errors when staging changes; all paths resolved against working directory
+- **Unlimited Iterations** — setting iterations to unlimited no longer silently caps at 50 (JS truthiness bug with `0`)
+- **maxTokens Validation** — `maxTokens=0` no longer causes API errors (VS Code doesn't enforce schema minimum)
+- **Bedrock Model Detection** — Bedrock cross-region model IDs (e.g., `global.anthropic.claude-haiku-4-5`) now correctly routed instead of throwing
+
+#### Improved
+- Signed and notarized macOS builds — no more Gatekeeper warnings
+- Removed legacy token-minting share backend (ShareCreateHandler)
+
+---
+
 ## [1.2.5] - 2025-12-28
 
 > **⚠️ Important: Unsigned Builds**
@@ -237,14 +274,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Known Issues
 
 ### Calliope AI IDE
-- **macOS Security**: Unsigned builds require right-click → "Open" on first launch
-- **Windows SmartScreen**: May show warning; click "More info" → "Run anyway"
 - **Linux**: Some distributions may require additional dependencies
 
 ### Calliope AI Lab
 - **First Launch**: Initial Python environment setup may take 2-3 minutes
-- **macOS Security**: Unsigned builds require right-click → "Open" on first launch
-- **Windows SmartScreen**: May show warning; click "More info" → "Run anyway"
 
 ---
 
@@ -258,12 +291,11 @@ Future releases will include upgrade instructions and migration guides as needed
 
 ## What's Next?
 
-### Planned for v1.3.0
-- Code signing for macOS and Windows
-- Enhanced agent customization and configuration
-- More AI provider integrations
-- Performance optimizations for large codebases
-- Extended documentation and tutorials
+### Planned for Next Release
+- Claude Agent SDK backend integration
+- OpenAI Agents SDK backend (TypeScript native)
+- Execution-aware UI with DAG progress view
+- End-to-end agent task lifecycle tests
 
 ---
 

@@ -15,10 +15,10 @@
 <!-- VERSIONS:START -->
 | Application | Latest Version | Released |
 |-------------|---------------|----------|
-| **Calliope AI IDE** | `v1.3.0` | 2026-02-18 |
-| **Calliope AI Lab** | `v1.2.5` | 2026-02-01 |
-| **Calliope AI Chat** | — | — |
-| **Calliope AI Loadr** | `v1.0.1` | 2026-02-24 |
+| **Calliope AI IDE** | `v1.4.0` | 2026-03-08 |
+| **Calliope AI Lab** | `v1.3.1` | 2026-02-26 |
+| **Calliope AI Chat** | `v1.0.0` | 2026-02-25 |
+| **Calliope AI Loadr** | `v1.0.2` | 2026-02-25 |
 <!-- VERSIONS:END -->
 
 ---
@@ -225,9 +225,9 @@ All applications are available for the following platforms:
 
 ### Latest Releases
 
-> **⚠️ Note: Code Signing In Progress**
+> **✅ Signed & Notarized**
 >
-> We are currently in the process of signing our builds. Until signing is complete, you may see security warnings on macOS and Windows. This is normal for new software awaiting certification. See the [macOS Security Guide](#macos-security-guide) below for detailed instructions.
+> All macOS builds are signed and notarized by Apple. No Gatekeeper warnings — just download and open.
 
 Downloads are available on the [Releases](../../releases) page.
 
@@ -454,8 +454,8 @@ Your data stays on your machine. When you use AI features, your prompts go direc
 </details>
 
 <details>
-<summary><b>Why do I see security warnings on macOS?</b></summary>
-We are currently in the process of getting our builds signed with Apple. Until that's complete, macOS Gatekeeper will show warnings for unverified developers. This is normal — see our <a href="#macos-security-guide">macOS Security Guide</a> for step-by-step instructions to open the app safely.
+<summary><b>Are the macOS builds signed?</b></summary>
+Yes. All macOS builds are signed and notarized by Apple. You should not see any Gatekeeper warnings. If you downloaded an older version, update to the latest release.
 </details>
 
 <details>
