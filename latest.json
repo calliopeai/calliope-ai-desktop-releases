@@ -1,10 +1,10 @@
 {
-  "generated": "2026-03-08T04:54:08Z",
+  "generated": "2026-03-28T23:47:17Z",
   "ide": {
-    "version": "1.4.0",
-    "tag": "ide-v1.4.0",
-    "publishedAt": "2026-03-08T04:53:57Z",
-    "releaseUrl": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/tag/ide-v1.4.0",
+    "version": "1.5.0",
+    "tag": "ide-v1.5.0",
+    "publishedAt": "2026-03-28T23:47:08Z",
+    "releaseUrl": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/tag/ide-v1.5.0",
     "assets": []
   },
   "lab": {
