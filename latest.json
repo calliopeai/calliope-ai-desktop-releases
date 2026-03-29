@@ -1,30 +1,30 @@
 {
-  "generated": "2026-03-29T08:33:14Z",
+  "generated": "2026-03-29T16:05:39Z",
   "ide": {
-    "version": "1.5.0",
-    "tag": "ide-v1.5.0",
-    "publishedAt": "2026-03-28T23:47:08Z",
-    "releaseUrl": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/tag/ide-v1.5.0",
+    "version": "1.4.0",
+    "tag": "ide-v1.4.0",
+    "publishedAt": "2026-03-08T04:53:57Z",
+    "releaseUrl": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/tag/ide-v1.4.0",
     "assets": [
       {
         "name": "calliope-ide-darwin-arm64.zip",
-        "size": 308631163,
-        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/ide-v1.5.0/calliope-ide-darwin-arm64.zip"
+        "size": 308713005,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/ide-v1.4.0/calliope-ide-darwin-arm64.zip"
       },
       {
         "name": "calliope-ide-linux-arm64.deb",
-        "size": 240615668,
-        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/ide-v1.5.0/calliope-ide-linux-arm64.deb"
+        "size": 240641616,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/ide-v1.4.0/calliope-ide-linux-arm64.deb"
       },
       {
         "name": "calliope-ide-linux-x64.deb",
-        "size": 257919884,
-        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/ide-v1.5.0/calliope-ide-linux-x64.deb"
+        "size": 258010040,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/ide-v1.4.0/calliope-ide-linux-x64.deb"
       },
       {
         "name": "calliope-ide-win32-x64.zip",
-        "size": 345026693,
-        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/ide-v1.5.0/calliope-ide-win32-x64.zip"
+        "size": 345014456,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/ide-v1.4.0/calliope-ide-win32-x64.zip"
       }
     ]
   },
@@ -82,102 +82,102 @@
     ]
   },
   "chat": {
-    "version": "1.1.0",
-    "tag": "chat-v1.1.0",
-    "publishedAt": "2026-03-29T07:28:21Z",
-    "releaseUrl": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/tag/chat-v1.1.0",
+    "version": "1.0.0",
+    "tag": "chat-v1.0.0",
+    "publishedAt": "2026-02-25T06:05:29Z",
+    "releaseUrl": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/tag/chat-v1.0.0",
     "assets": [
       {
-        "name": "chat-studio-darwin-arm64.dmg",
-        "size": 485788244,
-        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.1.0/chat-studio-darwin-arm64.dmg"
+        "name": "Chat.Studio-0.1.0-linux-amd64.deb",
+        "size": 427838460,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.0.0/Chat.Studio-0.1.0-linux-amd64.deb"
       },
       {
-        "name": "chat-studio-darwin-arm64.zip",
-        "size": 467346927,
-        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.1.0/chat-studio-darwin-arm64.zip"
+        "name": "Chat.Studio-0.1.0-linux-arm64.AppImage",
+        "size": 520482689,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.0.0/Chat.Studio-0.1.0-linux-arm64.AppImage"
       },
       {
-        "name": "chat-studio-linux-arm64.AppImage",
-        "size": 528109400,
-        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.1.0/chat-studio-linux-arm64.AppImage"
+        "name": "Chat.Studio-0.1.0-linux-arm64.deb",
+        "size": 384352032,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.0.0/Chat.Studio-0.1.0-linux-arm64.deb"
       },
       {
-        "name": "chat-studio-linux-arm64.deb",
-        "size": 390003452,
-        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.1.0/chat-studio-linux-arm64.deb"
+        "name": "Chat.Studio-0.1.0-linux-arm64.tar.gz",
+        "size": 489572057,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.0.0/Chat.Studio-0.1.0-linux-arm64.tar.gz"
       },
       {
-        "name": "chat-studio-linux-arm64.tar.gz",
-        "size": 496831739,
-        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.1.0/chat-studio-linux-arm64.tar.gz"
+        "name": "Chat.Studio-0.1.0-linux-x64.tar.gz",
+        "size": 523026325,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.0.0/Chat.Studio-0.1.0-linux-x64.tar.gz"
       },
       {
-        "name": "chat-studio-linux-x64.AppImage",
-        "size": 567648599,
-        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.1.0/chat-studio-linux-x64.AppImage"
+        "name": "Chat.Studio-0.1.0-linux-x86_64.AppImage",
+        "size": 559731475,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.0.0/Chat.Studio-0.1.0-linux-x86_64.AppImage"
       },
       {
-        "name": "chat-studio-linux-x64.deb",
-        "size": 370089596,
-        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.1.0/chat-studio-linux-x64.deb"
+        "name": "Chat.Studio-0.1.0-mac-arm64.dmg",
+        "size": 477409773,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.0.0/Chat.Studio-0.1.0-mac-arm64.dmg"
       },
       {
-        "name": "chat-studio-linux-x64.tar.gz",
-        "size": 530538063,
-        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.1.0/chat-studio-linux-x64.tar.gz"
+        "name": "Chat.Studio-0.1.0-mac-arm64.zip",
+        "size": 458773262,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.0.0/Chat.Studio-0.1.0-mac-arm64.zip"
       },
       {
-        "name": "chat-studio-win32-x64.exe",
-        "size": 378015939,
-        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.1.0/chat-studio-win32-x64.exe"
+        "name": "Chat.Studio-0.1.0-win-x64.exe",
+        "size": 372416961,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.0.0/Chat.Studio-0.1.0-win-x64.exe"
       }
     ]
   },
   "loadr": {
     "version": "1.1.0",
     "tag": "loadr-v1.1.0",
-    "publishedAt": "2026-03-29T08:33:03Z",
+    "publishedAt": "2026-03-29T16:05:30Z",
     "releaseUrl": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/tag/loadr-v1.1.0",
     "assets": [
       {
         "name": "loadr-desktop-darwin-arm64.dmg",
-        "size": 311332745,
+        "size": 311318335,
         "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/loadr-v1.1.0/loadr-desktop-darwin-arm64.dmg"
       },
       {
         "name": "loadr-desktop-darwin-arm64.zip",
-        "size": 282754210,
+        "size": 282767633,
         "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/loadr-v1.1.0/loadr-desktop-darwin-arm64.zip"
       },
       {
         "name": "loadr-desktop-linux-arm64.AppImage",
-        "size": 348108792,
+        "size": 348150144,
         "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/loadr-v1.1.0/loadr-desktop-linux-arm64.AppImage"
       },
       {
         "name": "loadr-desktop-linux-arm64.tar.gz",
-        "size": 326002458,
+        "size": 326017064,
         "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/loadr-v1.1.0/loadr-desktop-linux-arm64.tar.gz"
       },
       {
         "name": "loadr-desktop-linux-x64.AppImage",
-        "size": 357087733,
+        "size": 357137054,
         "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/loadr-v1.1.0/loadr-desktop-linux-x64.AppImage"
       },
       {
         "name": "loadr-desktop-linux-x64.deb",
-        "size": 229914754,
+        "size": 229826764,
         "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/loadr-v1.1.0/loadr-desktop-linux-x64.deb"
       },
       {
         "name": "loadr-desktop-linux-x64.tar.gz",
-        "size": 329224237,
+        "size": 329258433,
         "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/loadr-v1.1.0/loadr-desktop-linux-x64.tar.gz"
       },
       {
         "name": "loadr-desktop-win32-x64.exe",
-        "size": 230407844,
+        "size": 230424380,
         "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/loadr-v1.1.0/loadr-desktop-win32-x64.exe"
       }
     ]
