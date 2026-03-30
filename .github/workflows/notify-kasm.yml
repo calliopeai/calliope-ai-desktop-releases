@@ -49,16 +49,17 @@ jobs:
         run: |
           PRODUCT="${{ steps.tag.outputs.product }}"
           VERSION="${{ steps.tag.outputs.version }}"
+          SUITE_VERSION="$(date -u +%Y.%m.%d)"
 
           # Build suite payload — set the updated component, leave others blank (Dockerfile defaults)
           case "$PRODUCT" in
-            ide)   PAYLOAD="{\"ide_version\":\"${VERSION}\",\"lab_version\":\"\",\"chat_version\":\"\",\"loadr_version\":\"\"}" ;;
-            lab)   PAYLOAD="{\"ide_version\":\"\",\"lab_version\":\"${VERSION}\",\"chat_version\":\"\",\"loadr_version\":\"\"}" ;;
-            chat)  PAYLOAD="{\"ide_version\":\"\",\"lab_version\":\"\",\"chat_version\":\"${VERSION}\",\"loadr_version\":\"\"}" ;;
-            loadr) PAYLOAD="{\"ide_version\":\"\",\"lab_version\":\"\",\"chat_version\":\"\",\"loadr_version\":\"${VERSION}\"}" ;;
+            ide)   PAYLOAD="{\"version\":\"${SUITE_VERSION}\",\"ide_version\":\"${VERSION}\",\"lab_version\":\"\",\"chat_version\":\"\",\"loadr_version\":\"\"}" ;;
+            lab)   PAYLOAD="{\"version\":\"${SUITE_VERSION}\",\"ide_version\":\"\",\"lab_version\":\"${VERSION}\",\"chat_version\":\"\",\"loadr_version\":\"\"}" ;;
+            chat)  PAYLOAD="{\"version\":\"${SUITE_VERSION}\",\"ide_version\":\"\",\"lab_version\":\"\",\"chat_version\":\"${VERSION}\",\"loadr_version\":\"\"}" ;;
+            loadr) PAYLOAD="{\"version\":\"${SUITE_VERSION}\",\"ide_version\":\"\",\"lab_version\":\"\",\"chat_version\":\"\",\"loadr_version\":\"${VERSION}\"}" ;;
           esac
 
-          echo "Triggering kasm suite rebuild (${PRODUCT} updated to v${VERSION})"
+          echo "Triggering kasm suite rebuild (${PRODUCT} updated to v${VERSION}, suite v${SUITE_VERSION})"
           RESPONSE=$(curl -s -w "\n%{http_code}" -X POST \
             -H "Accept: application/vnd.github+json" \
             -H "Authorization: Bearer ${{ secrets.PAT_CALLIOPE_CI }}" \
