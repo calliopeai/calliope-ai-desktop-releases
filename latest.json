@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-30T03:56:06Z",
+  "generated": "2026-03-30T11:55:43Z",
   "ide": {
     "version": "1.5.0",
     "tag": "ide-v1.5.0",
@@ -82,55 +82,55 @@
     ]
   },
   "chat": {
-    "version": "1.0.0",
-    "tag": "chat-v1.0.0",
-    "publishedAt": "2026-02-25T06:05:29Z",
-    "releaseUrl": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/tag/chat-v1.0.0",
+    "version": "1.1.0",
+    "tag": "chat-v1.1.0",
+    "publishedAt": "2026-03-30T11:55:33Z",
+    "releaseUrl": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/tag/chat-v1.1.0",
     "assets": [
       {
-        "name": "Chat.Studio-0.1.0-linux-amd64.deb",
-        "size": 427838460,
-        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.0.0/Chat.Studio-0.1.0-linux-amd64.deb"
+        "name": "chat-studio-darwin-arm64.dmg",
+        "size": 591767158,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.1.0/chat-studio-darwin-arm64.dmg"
       },
       {
-        "name": "Chat.Studio-0.1.0-linux-arm64.AppImage",
-        "size": 520482689,
-        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.0.0/Chat.Studio-0.1.0-linux-arm64.AppImage"
+        "name": "chat-studio-darwin-arm64.zip",
+        "size": 568765607,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.1.0/chat-studio-darwin-arm64.zip"
       },
       {
-        "name": "Chat.Studio-0.1.0-linux-arm64.deb",
-        "size": 384352032,
-        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.0.0/Chat.Studio-0.1.0-linux-arm64.deb"
+        "name": "chat-studio-linux-arm64.AppImage",
+        "size": 653560223,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.1.0/chat-studio-linux-arm64.AppImage"
       },
       {
-        "name": "Chat.Studio-0.1.0-linux-arm64.tar.gz",
-        "size": 489572057,
-        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.0.0/Chat.Studio-0.1.0-linux-arm64.tar.gz"
+        "name": "chat-studio-linux-arm64.deb",
+        "size": 481174468,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.1.0/chat-studio-linux-arm64.deb"
       },
       {
-        "name": "Chat.Studio-0.1.0-linux-x64.tar.gz",
-        "size": 523026325,
-        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.0.0/Chat.Studio-0.1.0-linux-x64.tar.gz"
+        "name": "chat-studio-linux-arm64.tar.gz",
+        "size": 614680827,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.1.0/chat-studio-linux-arm64.tar.gz"
       },
       {
-        "name": "Chat.Studio-0.1.0-linux-x86_64.AppImage",
-        "size": 559731475,
-        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.0.0/Chat.Studio-0.1.0-linux-x86_64.AppImage"
+        "name": "chat-studio-linux-x64.AppImage",
+        "size": 721497681,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.1.0/chat-studio-linux-x64.AppImage"
       },
       {
-        "name": "Chat.Studio-0.1.0-mac-arm64.dmg",
-        "size": 477409773,
-        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.0.0/Chat.Studio-0.1.0-mac-arm64.dmg"
+        "name": "chat-studio-linux-x64.deb",
+        "size": 549496676,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.1.0/chat-studio-linux-x64.deb"
       },
       {
-        "name": "Chat.Studio-0.1.0-mac-arm64.zip",
-        "size": 458773262,
-        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.0.0/Chat.Studio-0.1.0-mac-arm64.zip"
+        "name": "chat-studio-linux-x64.tar.gz",
+        "size": 675384265,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.1.0/chat-studio-linux-x64.tar.gz"
       },
       {
-        "name": "Chat.Studio-0.1.0-win-x64.exe",
-        "size": 372416961,
-        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.0.0/Chat.Studio-0.1.0-win-x64.exe"
+        "name": "chat-studio-win32-x64.exe",
+        "size": 450085276,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.1.0/chat-studio-win32-x64.exe"
       }
     ]
   },
