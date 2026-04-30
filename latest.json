@@ -1,32 +1,11 @@
 {
-  "generated": "2026-04-30T04:12:45Z",
+  "generated": "2026-04-30T19:39:50Z",
   "ide": {
-    "version": "1.5.0",
-    "tag": "ide-v1.5.0",
-    "publishedAt": "2026-03-29T18:14:52Z",
-    "releaseUrl": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/tag/ide-v1.5.0",
-    "assets": [
-      {
-        "name": "calliope-ide-darwin-arm64.zip",
-        "size": 308727249,
-        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/ide-v1.5.0/calliope-ide-darwin-arm64.zip"
-      },
-      {
-        "name": "calliope-ide-linux-arm64.deb",
-        "size": 240669440,
-        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/ide-v1.5.0/calliope-ide-linux-arm64.deb"
-      },
-      {
-        "name": "calliope-ide-linux-x64.deb",
-        "size": 257985628,
-        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/ide-v1.5.0/calliope-ide-linux-x64.deb"
-      },
-      {
-        "name": "calliope-ide-win32-x64.zip",
-        "size": 345027423,
-        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/ide-v1.5.0/calliope-ide-win32-x64.zip"
-      }
-    ]
+    "version": "1.6.0",
+    "tag": "ide-v1.6.0",
+    "publishedAt": "2026-04-30T19:39:40Z",
+    "releaseUrl": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/tag/ide-v1.6.0",
+    "assets": []
   },
   "lab": {
     "version": "1.4.0",
