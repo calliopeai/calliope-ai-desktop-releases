@@ -15,7 +15,7 @@
 <!-- VERSIONS:START -->
 | Application | Latest Version | Released |
 |-------------|---------------|----------|
-| **Calliope AI IDE** | `v1.6.5` | 2026-05-06 |
+| **Calliope AI IDE** | `v1.6.6` | 2026-05-08 |
 | **Calliope AI Lab** | `v1.4.0` | 2026-03-29 |
 | **Calliope AI Chat** | `v1.1.0` | 2026-03-30 |
 | **Calliope AI Loadr** | `v1.2.0` | 2026-03-30 |

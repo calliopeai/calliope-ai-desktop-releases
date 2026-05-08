@@ -1,11 +1,22 @@
 {
-  "generated": "2026-05-06T17:59:43Z",
+  "generated": "2026-05-08T18:57:35Z",
   "ide": {
-    "version": "1.6.5",
-    "tag": "ide-v1.6.5",
-    "publishedAt": "2026-05-06T17:59:25Z",
-    "releaseUrl": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/tag/ide-v1.6.5",
-    "assets": []
+    "version": "1.6.6",
+    "tag": "ide-v1.6.6",
+    "publishedAt": "2026-05-08T18:57:18Z",
+    "releaseUrl": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/tag/ide-v1.6.6",
+    "assets": [
+      {
+        "name": "calliope-ide-linux-arm64.deb",
+        "size": 304408128,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/ide-v1.6.6/calliope-ide-linux-arm64.deb"
+      },
+      {
+        "name": "calliope-ide-linux-x64.deb",
+        "size": 323171024,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/ide-v1.6.6/calliope-ide-linux-x64.deb"
+      }
+    ]
   },
   "lab": {
     "version": "1.4.0",
