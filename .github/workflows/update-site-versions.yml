@@ -53,23 +53,25 @@ jobs:
           token: ${{ secrets.PAT_CALLIOPE_CI }}
           path: site
 
-      - name: Update version links
+      - name: Update version in download data file
         run: |
           cd site
-          FILE="content/download/_index.md"
+          # Downloads are data-driven: data/desktop_tools.yml is the single source of truth.
+          # The /download/ page + shortcode render tag/version/asset links from it — no content edits.
+          FILE="data/desktop_tools.yml"
           APP="${{ steps.release.outputs.app }}"
           TAG="${{ steps.release.outputs.tag }}"
           VERSION="${{ steps.release.outputs.version }}"
 
-          echo "Updating $APP to $TAG (version $VERSION)"
+          echo "Updating $APP -> $TAG (version $VERSION) in $FILE"
 
-          # Update release tag link for the app
-          sed -i "s|releases/tag/${APP}-v[0-9.]*|releases/tag/$TAG|g" "$FILE"
-
-          # App-specific direct download link updates
-          if [ "$APP" = "lab" ]; then
-            sed -i "s|LAB-Calliope-AI-Lab-[0-9.]*-|LAB-Calliope-AI-Lab-$VERSION-|g" "$FILE"
-          fi
+          # Bump the matching tool's `tag:` line and the `version:` line immediately after it.
+          # Asset filenames are versionless, so only these two lines ever change.
+          awk -v app="$APP" -v tag="$TAG" -v ver="$VERSION" '
+            $0 ~ ("tag: " app "-v") { sub(/tag: .*/, "tag: " tag); intag=1; print; next }
+            intag && /version:/ { sub(/version: .*/, "version: \"" ver "\""); intag=0; print; next }
+            { print }
+          ' "$FILE" > "$FILE.tmp" && mv "$FILE.tmp" "$FILE"
 
           echo "Changes made:"
           git diff "$FILE" || echo "No changes detected"
@@ -84,11 +86,13 @@ jobs:
           delete-branch: true
           title: "Update ${{ steps.release.outputs.app }} to ${{ steps.release.outputs.tag }}"
           body: |
-            Automated PR to update download links for **${{ steps.release.outputs.app }}** release.
+            Automated PR to update `data/desktop_tools.yml` for the **${{ steps.release.outputs.app }}** release.
 
             - Tag: `${{ steps.release.outputs.tag }}`
             - Version: `${{ steps.release.outputs.version }}`
             - Release: https://github.com/${{ github.repository }}/releases/tag/${{ steps.release.outputs.tag }}
+
+            The `/download/` page renders download links from this data file, so only the version bump is needed.
 
             ---
             *This PR was automatically created by the [update-site-versions](https://github.com/${{ github.repository }}/actions/workflows/update-site-versions.yml) workflow.*

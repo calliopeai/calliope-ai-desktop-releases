@@ -15,10 +15,10 @@
 <!-- VERSIONS:START -->
 | Application | Latest Version | Released |
 |-------------|---------------|----------|
-| **Calliope AI IDE** | `v1.5.0` | 2026-03-29 |
+| **Calliope AI IDE** | `v1.6.7` | 2026-05-17 |
 | **Calliope AI Lab** | `v1.4.0` | 2026-03-29 |
 | **Calliope AI Chat** | `v1.1.0` | 2026-03-30 |
-| **Calliope AI Loadr** | `v1.2.0` | 2026-03-30 |
+| **Calliope AI Loadr** | `v1.3.10` | 2026-05-17 |
 <!-- VERSIONS:END -->
 
 ---
