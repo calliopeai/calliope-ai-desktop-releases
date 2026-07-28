@@ -42,3 +42,6 @@ build/
 !assets/**/*.svg
 !assets/**/*.ico
 !assets/**/*.jpg
+
+# Navegador graph DB
+.navegador/
