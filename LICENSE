@@ -1,21 +1,69 @@
-Copyright (c) 2025 Calliope Labs Inc
+CALLIOPE AI DESKTOP APPLICATIONS -- END USER LICENSE
 
-FREE TO USE LICENSE WITH NO WARRANTY
+Copyright (c) 2025-2026 Calliope Labs Inc. All rights reserved.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to use
-the Software for any purpose, including without limitation the rights to use,
-copy, modify, merge, publish, and distribute the Software, subject to the
-following conditions:
+Free to use. Not open source.
+
+## 1. Grant
+
+Calliope Labs Inc. grants you a free, worldwide, non-exclusive, non-transferable
+license to download, install, and use the Calliope AI desktop applications and
+any documentation distributed with them (the "Software"), for personal or
+commercial purposes, at no charge.
+
+No fee, seat count, or entitlement is required to use the Software.
+
+## 2. What this license does not grant
+
+The Software is proprietary. Except as expressly permitted above, or as
+applicable law permits notwithstanding this license, you may not:
+
+- modify, adapt, translate, or create derivative works of the Software;
+- reverse engineer, decompile, or disassemble the Software;
+- redistribute, publish, sell, rent, lease, sublicense, or otherwise transfer
+  the Software to any third party;
+- host the Software as a service for third parties; or
+- remove or alter any copyright, trademark, or other proprietary notice.
+
+"Free to use" means free of charge. It does not mean the Software is open
+source, and no source code is provided under this license.
+
+## 3. The Kasm images
+
+The `calliope-kasm` repository is MIT-licensed. That license covers the wrapper
+it contains: the Dockerfiles, scripts, and configuration for running these
+applications in Kasm Workspaces. It does **not** cover the Calliope AI desktop
+applications bundled inside the resulting images, which remain under this
+license. An MIT wrapper does not relicense its payload.
+
+## 4. Trademarks
+
+Calliope AI is a trademark of Calliope Labs Inc. This license grants no
+trademark rights.
+
+## 5. Third-party services
+
+Any AI features in the Software require third-party API services under your own
+keys. Your use of those services is between you and the provider, on their
+terms.
+
+## 6. Term and termination
+
+This license continues until terminated. It terminates automatically if you
+breach it. On termination, stop using the Software and delete your copies.
+
+## 7. No warranty
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 
-IN NO EVENT SHALL CALLIOPE LABS INC, ITS AUTHORS, DEVELOPERS, CONTRIBUTORS,
-OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
-WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
-IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+IN NO EVENT SHALL CALLIOPE LABS INC, ITS AUTHORS, DEVELOPERS, CONTRIBUTORS, OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+## 8. Your acknowledgements
 
 BY DOWNLOADING, INSTALLING, OR USING THIS SOFTWARE, YOU ACKNOWLEDGE AND AGREE:
 
