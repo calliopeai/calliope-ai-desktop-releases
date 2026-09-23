@@ -1,11 +1,11 @@
-version: 1.2.3
+version: 1.3.0
 files:
-  - url: https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.2.3/chat-studio-darwin-arm64.zip
-    sha512: xS00Qq86R62X+68azSxsXolHiGxVK5O6Y+D9nIfiwWNYxh6dm0587q+O2D8IqInG5avWEBPVbBOpEDBzMqKfGg==
-    size: 299798258
-  - url: https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.2.3/chat-studio-darwin-arm64.dmg
-    sha512: zqzHvPbLzzIJ2+Fwr+BlXiLCVptWGhS+cyYdRV+RCo9fu/XlNc0AkHUqfth1bOOTxcpStOc0rA/0K13BkmFAcw==
-    size: 288899995
-path: https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.2.3/chat-studio-darwin-arm64.zip
-sha512: xS00Qq86R62X+68azSxsXolHiGxVK5O6Y+D9nIfiwWNYxh6dm0587q+O2D8IqInG5avWEBPVbBOpEDBzMqKfGg==
-releaseDate: '2026-09-20T09:19:39.253Z'
+  - url: https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.3.0/chat-studio-darwin-arm64.zip
+    sha512: iFMyMPOVTH0DMZ2+s1llrFRu+Hkom2Cyc6j/JDf5ulkeY4QYgcE2zlfk4DcjSiw92v72fNp31fuA2NqdR2YMXw==
+    size: 300802896
+  - url: https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.3.0/chat-studio-darwin-arm64.dmg
+    sha512: A9ofOfbKy6nF5dp07lu5tX5oo9i+xvKTX7sfTsII4JhCc4aELaJnmHCuKilkCu5xmf0ITFHycCMi6Chy5bhs/A==
+    size: 289745815
+path: https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.3.0/chat-studio-darwin-arm64.zip
+sha512: iFMyMPOVTH0DMZ2+s1llrFRu+Hkom2Cyc6j/JDf5ulkeY4QYgcE2zlfk4DcjSiw92v72fNp31fuA2NqdR2YMXw==
+releaseDate: '2026-09-23T15:19:36.768Z'

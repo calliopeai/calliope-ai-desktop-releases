@@ -1,8 +1,8 @@
-version: 1.2.3
+version: 1.3.0
 files:
-  - url: https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.2.3/chat-studio-win32-x64.exe
-    sha512: d7e4NV76vCF8gLx2HgXXqflnWIwalTjWB9Lk+pvtayRdLpSbCXwAptNWi0SEJ2+0JhL16oudrr6shH+d/7xv3w==
-    size: 237108899
-path: https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.2.3/chat-studio-win32-x64.exe
-sha512: d7e4NV76vCF8gLx2HgXXqflnWIwalTjWB9Lk+pvtayRdLpSbCXwAptNWi0SEJ2+0JhL16oudrr6shH+d/7xv3w==
-releaseDate: '2026-09-20T09:24:43.361Z'
+  - url: https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.3.0/chat-studio-win32-x64.exe
+    sha512: iFspefC8NEaxavzkT/sS7HVXpb734qhFujU5QNH491/zROguLBbDz86P+Oy0dn90Zk8/mlbpVKHXdqXxXFBmFg==
+    size: 237968543
+path: https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.3.0/chat-studio-win32-x64.exe
+sha512: iFspefC8NEaxavzkT/sS7HVXpb734qhFujU5QNH491/zROguLBbDz86P+Oy0dn90Zk8/mlbpVKHXdqXxXFBmFg==
+releaseDate: '2026-09-23T14:55:12.952Z'
