@@ -17,7 +17,7 @@
 |-------------|---------------|----------|
 | **Calliope AI IDE** | `v1.6.7` | 2026-05-17 |
 | **Calliope AI Lab** | `v1.4.0` | 2026-03-29 |
-| **Calliope AI Chat** | `v1.4.0` | 2026-09-28 |
+| **Calliope AI Chat** | `v1.4.1` | 2026-09-29 |
 | **Calliope AI Loadr** | `v1.4.2` | 2026-09-18 |
 <!-- VERSIONS:END -->
 
