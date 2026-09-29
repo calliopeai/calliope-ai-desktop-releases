@@ -1,12 +1,12 @@
-version: 1.4.2
+version: 1.4.3
 files:
-  - url: https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.4.2/chat-studio-linux-x86_64.AppImage
-    sha512: 38iJIP/pqobDKicaMIVY/eqgvSuwsPQG02hNad/6GEv9I8J2JhsjnxF7Xfqle46/JuztwzMByj486AH8QVC2vQ==
-    size: 335394854
-    blockMapSize: 350266
-  - url: https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.4.2/chat-studio-linux-amd64.deb
-    sha512: XCGxJ+OsN/t6gHFp+Hmdj7sg0bbGjJbJcAKasItceDh8Xz9JG2oCl2DMNeZGcq22j0xrag0kboikCi9upAkgRA==
-    size: 259838188
-path: https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.4.2/chat-studio-linux-x86_64.AppImage
-sha512: 38iJIP/pqobDKicaMIVY/eqgvSuwsPQG02hNad/6GEv9I8J2JhsjnxF7Xfqle46/JuztwzMByj486AH8QVC2vQ==
-releaseDate: '2026-09-29T04:53:51.059Z'
+  - url: https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.4.3/chat-studio-linux-x86_64.AppImage
+    sha512: BnI+evhnJ+DMDdP53MtG+kTpfiD152Mg+D6ZZ3BojWFLQzV2eT0J7EWv+F+J/RdLUpLQoVCov2AmWuDbO5Hk6A==
+    size: 335398878
+    blockMapSize: 350194
+  - url: https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.4.3/chat-studio-linux-amd64.deb
+    sha512: a+WU4ZPq8sFz7pLannG/XJO9IQ1nAlDPjlU6Ct7q/sxsxdC/NmQdUN74MwD1BHzfmslTfPrUbaKIuRAMEr0u6A==
+    size: 259836148
+path: https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/chat-v1.4.3/chat-studio-linux-x86_64.AppImage
+sha512: BnI+evhnJ+DMDdP53MtG+kTpfiD152Mg+D6ZZ3BojWFLQzV2eT0J7EWv+F+J/RdLUpLQoVCov2AmWuDbO5Hk6A==
+releaseDate: '2026-09-29T13:38:14.907Z'
