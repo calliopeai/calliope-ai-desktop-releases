@@ -21,19 +21,30 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           # Fetch all releases
-          releases=$(gh release list --json tagName,name,publishedAt,isDraft,isPrerelease)
+          releases=$(gh release list --limit 1000 --json tagName,name,publishedAt,isDraft,isPrerelease)
 
           # App prefixes to scan
-          APPS=("ide" "lab" "chat" "loadr")
+          APPS=("ide" "lab" "chat" "loadr" "cykick")
 
           # Build each app's JSON block
           json_blocks=""
           for app in "${APPS[@]}"; do
             tag=$(echo "$releases" | jq -r "[.[] | select(.tagName | startswith(\"${app}-\")) | select(.isDraft == false) | select(.isPrerelease == false)] | sort_by(.publishedAt) | reverse | .[0].tagName // empty")
 
+            # Do not advertise Cykick before its first published desktop release.
+            if [ "$app" = "cykick" ] && [ -z "$tag" ]; then
+              continue
+            fi
+
             if [ -n "$tag" ]; then
               version=$(echo "$tag" | sed "s/${app}-v//")
               assets=$(gh release view "$tag" --json assets --jq '.assets[] | {name: .name, url: .url, size: .size}' | jq -s '.')
+              if [ "$app" = "cykick" ] && ! echo "$assets" | jq -e '
+                any(.[]; .size > 0 and (.name | test("\\.(dmg|zip|AppImage|deb|rpm|exe|tar\\.gz)$")))
+                and any(.[]; .size > 0 and .name == "SHA256SUMS")' >/dev/null; then
+                echo "::error::Cykick release needs a desktop asset and SHA256SUMS before catalog publication"
+                exit 1
+              fi
               published=$(gh release view "$tag" --json publishedAt --jq '.publishedAt')
 
               block=$(jq -n \
@@ -66,15 +77,18 @@ jobs:
           TABLE="| Application | Latest Version | Released |\n"
           TABLE+="|-------------|---------------|----------|\n"
 
-          for app in ide lab chat loadr; do
+          for app in ide lab chat loadr cykick; do
             version=$(jq -r ".${app}.version // empty" latest.json)
             published=$(jq -r ".${app}.publishedAt // empty" latest.json)
+
+            if [ "$app" = "cykick" ] && [ -z "$version" ]; then continue; fi
 
             case "$app" in
               ide)   name="Calliope AI IDE" ;;
               lab)   name="Calliope AI Lab" ;;
               chat)  name="Calliope AI Chat" ;;
               loadr) name="Calliope AI Loadr" ;;
+              cykick) name="Cykick" ;;
             esac
 
             if [ -n "$version" ] && [ "$version" != "null" ]; then
