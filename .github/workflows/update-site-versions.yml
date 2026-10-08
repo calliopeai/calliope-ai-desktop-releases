@@ -11,6 +11,8 @@ on:
 
 jobs:
   update-site:
+    # Cykick uses the release catalog; there is no desktop_tools.yml entry yet.
+    if: ${{ !startsWith(github.event.release.tag_name || inputs.tag, 'cykick-') }}
     runs-on: ubuntu-latest
 
     steps:
@@ -23,23 +25,23 @@ jobs:
             TAG="${{ github.event.release.tag_name }}"
           fi
 
-          echo "tag=$TAG" >> $GITHUB_OUTPUT
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
 
           if [[ "$TAG" == ide-* ]]; then
-            echo "app=ide" >> $GITHUB_OUTPUT
-            echo "version=${TAG#ide-v}" >> $GITHUB_OUTPUT
+            echo "app=ide" >> "$GITHUB_OUTPUT"
+            echo "version=${TAG#ide-v}" >> "$GITHUB_OUTPUT"
             echo "App: IDE, Version: ${TAG#ide-v}"
           elif [[ "$TAG" == lab-* ]]; then
-            echo "app=lab" >> $GITHUB_OUTPUT
-            echo "version=${TAG#lab-v}" >> $GITHUB_OUTPUT
+            echo "app=lab" >> "$GITHUB_OUTPUT"
+            echo "version=${TAG#lab-v}" >> "$GITHUB_OUTPUT"
             echo "App: Lab, Version: ${TAG#lab-v}"
           elif [[ "$TAG" == chat-* ]]; then
-            echo "app=chat" >> $GITHUB_OUTPUT
-            echo "version=${TAG#chat-v}" >> $GITHUB_OUTPUT
+            echo "app=chat" >> "$GITHUB_OUTPUT"
+            echo "version=${TAG#chat-v}" >> "$GITHUB_OUTPUT"
             echo "App: Chat, Version: ${TAG#chat-v}"
           elif [[ "$TAG" == loadr-* ]]; then
-            echo "app=loadr" >> $GITHUB_OUTPUT
-            echo "version=${TAG#loadr-v}" >> $GITHUB_OUTPUT
+            echo "app=loadr" >> "$GITHUB_OUTPUT"
+            echo "version=${TAG#loadr-v}" >> "$GITHUB_OUTPUT"
             echo "App: Loadr, Version: ${TAG#loadr-v}"
           else
             echo "Unknown tag format: $TAG"
