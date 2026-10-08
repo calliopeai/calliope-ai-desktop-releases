@@ -11,6 +11,8 @@ on:
 
 jobs:
   update-site:
+    # Cykick uses the release catalog; there is no desktop_tools.yml entry yet.
+    if: ${{ !startsWith(github.event.release.tag_name || inputs.tag, 'cykick-') }}
     runs-on: ubuntu-latest
 
     steps:

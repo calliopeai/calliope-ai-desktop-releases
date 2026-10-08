@@ -209,7 +209,7 @@ A modern database client and data management studio with built-in AI assistance.
 
 ## Supported Platforms
 
-All applications are available for the following platforms:
+IDE, Lab, Chat and DB Loadr use the following platforms and package formats:
 
 | Platform | Architectures | Package Formats |
 |----------|--------------|-----------------|
@@ -218,6 +218,27 @@ All applications are available for the following platforms:
 | **Linux** | x64, ARM64 | `.deb`, `.rpm`, `.AppImage`, `.tar.gz` |
 
 > **Note:** macOS Intel (x64) is no longer supported. Apple Silicon (M1/M2/M3/M4) is required.
+
+### Cykick
+
+Cykick has a separate release qualification process. Use only the platforms and
+architectures listed on its release, rather than the table above. The initial
+installer target is macOS Apple Silicon; Windows and Linux installers are not
+advertised by this release path.
+
+Cykick requires a running local Docker-compatible runtime, such as Docker Desktop
+or Docker with Colima. It downloads a pinned container engine on first launch,
+so allow additional disk space and an initial network connection. It does not
+install the container runtime. The engine has a six-GiB memory ceiling; configure
+the runtime with enough memory for it and other running workloads.
+
+Connect provider keys through **View → Provider setup**, or choose a named local
+AWS CLI v2 profile for Amazon Bedrock. Provider usage is billed by that provider.
+Keys use the operating system credential service. Work and sessions live in an
+app-owned Docker volume; removing the application does not remove that volume.
+Check the Cykick release notes before removing application data or changing
+versions. **Help → Check for updates** opens available releases; updates are
+installed manually.
 
 ---
 
