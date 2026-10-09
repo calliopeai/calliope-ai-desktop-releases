@@ -40,9 +40,16 @@ jobs:
               version=$(echo "$tag" | sed "s/${app}-v//")
               assets=$(gh release view "$tag" --json assets --jq '.assets[] | {name: .name, url: .url, size: .size}' | jq -s '.')
               if [ "$app" = "cykick" ] && ! echo "$assets" | jq -e '
-                any(.[]; .size > 0 and (.name | test("\\.(dmg|zip|AppImage|deb|rpm|exe|tar\\.gz)$")))
-                and any(.[]; .size > 0 and .name == "SHA256SUMS")' >/dev/null; then
-                echo "::error::Cykick release needs a desktop asset and SHA256SUMS before catalog publication"
+                any(.[]; .size > 0 and (.name | test("^cykick-darwin-arm64-.*\\.dmg$")))
+                and any(.[]; .size > 0 and (.name | test("^cykick-linux-x64-.*\\.AppImage$")))
+                and any(.[]; .size > 0 and (.name | test("^cykick-linux-arm64-.*\\.AppImage$")))
+                and any(.[]; .size > 0 and (.name | test("^cykick-win32-x64-.*\\.exe$")))
+                and any(.[]; .size > 0 and .name == "SHA256SUMS")
+                and any(.[]; .size > 0 and .name == "source-darwin-arm64.json")
+                and any(.[]; .size > 0 and .name == "source-linux-x64.json")
+                and any(.[]; .size > 0 and .name == "source-linux-arm64.json")
+                and any(.[]; .size > 0 and .name == "source-win32-x64.json")' >/dev/null; then
+                echo "::error::Cykick release needs all four native targets, source receipts and SHA256SUMS before catalog publication"
                 exit 1
               fi
               published=$(gh release view "$tag" --json publishedAt --jq '.publishedAt')

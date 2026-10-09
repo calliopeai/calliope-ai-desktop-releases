@@ -222,18 +222,34 @@ IDE, Lab, Chat and DB Loadr use the following platforms and package formats:
 
 ### Cykick
 
-The Docker-backed Cykick 0.1.0 preview has been withdrawn from public desktop
-distribution and retained as an archived draft. There is currently no supported
-Cykick desktop installer in this catalog. Existing installations and their data
-are not removed by this withdrawal.
+[Download Cykick 0.2.0](https://github.com/calliopeai/calliope-ai-desktop-releases/releases/tag/cykick-v0.2.0)
 
-The replacement must bundle its agent runtime and tools inside the Electron
-application, without requiring Docker, for macOS ARM64, Linux x64 and ARM64, and
-Windows x64. Those packages will appear here only after platform qualification.
+Cykick is a native Electron desktop agent. Python, Node, Calliope CLI, Codex,
+Claude Code, Astro CLI, two Piper voices and Whisper base are included. New
+installations require no Docker, WSL, or separate Python/Node installation.
+Select a working folder, connect existing local brains in place, and use your
+own model provider credentials. Keys saved through desktop provider setup use
+the operating system's credential service; Bedrock uses a selected local AWS CLI
+v2 profile. Linux key saving requires an unlocked GNOME Keyring or KWallet.
 
-Users of the withdrawn preview should retain both their Cykick application data
-and its Docker data volume until migration is available; conversations and work
-remain in that volume. The archived source is preserved at
+| Platform | Architecture | Installers |
+| --- | --- | --- |
+| macOS 15+ | ARM64 | Signed and notarized `.dmg`, `.zip` |
+| Linux | x64, ARM64 | `.AppImage`, `.deb`, `.tar.gz` |
+| Windows | x64 | Unsigned `.exe` installer, portable `.exe` |
+
+The agent runs with your OS permissions. Large brain folders are read in place;
+connecting them does not copy or synchronize their contents. Optional local
+connectors and browser services retain their own setup requirements.
+
+The former Docker 0.1.0 preview remains withdrawn and archived. On upgrade,
+Cykick imports its owned preview profile into separate native storage and
+preserves the original Docker volume for rollback. Start Docker once for this
+import; subsequent native launches do not need it. Retain the old volume until
+you have checked your imported work. Existing connector settings and credentials
+are retained, but Linux-only connector commands need their native replacements.
+
+Archived source:
 [`archive/docker-desktop-2026-10-08`](https://github.com/calliopeai/cykick/tree/archive/docker-desktop-2026-10-08).
 
 ---
