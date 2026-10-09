@@ -23,3 +23,17 @@ Website download data and Kasm dispatch must be enabled with their tested produc
 integration. The existing Kasm notifier intentionally ignores `cykick` until
 [calliopeai/cykick#54](https://github.com/calliopeai/cykick/issues/54) provides that
 image and consumer. No Kasm rebuild is dispatched by this catalog addition.
+
+## Withdrawn container preview
+
+`cykick-v0.1.0` was withdrawn on 2026-10-09 UTC and retained as a draft with its
+installer, checksums and qualification/source metadata. Its Docker-backed source
+is preserved at `calliopeai/cykick` tag `archive/docker-desktop-2026-10-08`.
+Do not republish this preview as a native desktop release.
+
+The replacement release requires self-contained Electron packages for macOS
+ARM64, Linux x64 and ARM64, and Windows x64. Qualify startup without Docker or a
+system Python/Node installation, direct local folder access, provider-backed
+agent tasks, bundled CLI execution, shutdown, restart, update and migration of
+existing credentials/conversations before publication. Preserve the prior app
+and data until migration and rollback have been verified.
