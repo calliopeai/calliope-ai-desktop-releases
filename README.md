@@ -221,24 +221,19 @@ IDE, Lab, Chat and DB Loadr use the following platforms and package formats:
 
 ### Cykick
 
-Cykick has a separate release qualification process. Use only the platforms and
-architectures listed on its release, rather than the table above. The initial
-installer target is macOS Apple Silicon; Windows and Linux installers are not
-advertised by this release path.
+The Docker-backed Cykick 0.1.0 preview has been withdrawn from public desktop
+distribution and retained as an archived draft. There is currently no supported
+Cykick desktop installer in this catalog. Existing installations and their data
+are not removed by this withdrawal.
 
-Cykick requires a running local Docker-compatible runtime, such as Docker Desktop
-or Docker with Colima. It downloads a pinned container engine on first launch,
-so allow additional disk space and an initial network connection. It does not
-install the container runtime. The engine has a six-GiB memory ceiling; configure
-the runtime with enough memory for it and other running workloads.
+The replacement must bundle its agent runtime and tools inside the Electron
+application, without requiring Docker, for macOS ARM64, Linux x64 and ARM64, and
+Windows x64. Those packages will appear here only after platform qualification.
 
-Connect provider keys through **View → Provider setup**, or choose a named local
-AWS CLI v2 profile for Amazon Bedrock. Provider usage is billed by that provider.
-Keys use the operating system credential service. Work and sessions live in an
-app-owned Docker volume; removing the application does not remove that volume.
-Check the Cykick release notes before removing application data or changing
-versions. **Help → Check for updates** opens available releases; updates are
-installed manually.
+Users of the withdrawn preview should retain both their Cykick application data
+and its Docker data volume until migration is available; conversations and work
+remain in that volume. The archived source is preserved at
+[`archive/docker-desktop-2026-10-08`](https://github.com/calliopeai/cykick/tree/archive/docker-desktop-2026-10-08).
 
 ---
 
