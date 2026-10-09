@@ -233,7 +233,7 @@ v2 profile. Linux key saving requires an unlocked GNOME Keyring or KWallet.
 
 | Platform | Architecture | Installers |
 | --- | --- | --- |
-| macOS | ARM64 | Signed and notarized `.dmg`, `.zip` |
+| macOS 15+ | ARM64 | Signed and notarized `.dmg`, `.zip` |
 | Linux | x64, ARM64 | `.AppImage`, `.deb`, `.tar.gz` |
 | Windows | x64 | `.exe` installer, portable `.exe` |
 
