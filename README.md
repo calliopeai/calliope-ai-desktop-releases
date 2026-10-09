@@ -235,7 +235,7 @@ v2 profile. Linux key saving requires an unlocked GNOME Keyring or KWallet.
 | --- | --- | --- |
 | macOS 15+ | ARM64 | Signed and notarized `.dmg`, `.zip` |
 | Linux | x64, ARM64 | `.AppImage`, `.deb`, `.tar.gz` |
-| Windows | x64 | `.exe` installer, portable `.exe` |
+| Windows | x64 | Unsigned `.exe` installer, portable `.exe` |
 
 The agent runs with your OS permissions. Large brain folders are read in place;
 connecting them does not copy or synchronize their contents. Optional local

@@ -1,7 +1,7 @@
 # Cykick desktop releases
 
-Cykick is being added to the Desktop distribution channel under
-[calliopeai/cykick#53](https://github.com/calliopeai/cykick/issues/53).
+[Cykick 0.2.0](https://github.com/calliopeai/calliope-ai-desktop-releases/releases/tag/cykick-v0.2.0)
+ships through this channel under [calliopeai/cykick#53](https://github.com/calliopeai/cykick/issues/53).
 This repository owns release assets and discovery; Cykick owns the runtime,
 installer, supported platforms and qualification.
 
@@ -17,7 +17,7 @@ The installer pipeline must independently verify checksums, signing/notarization
 first launch, update, rollback and supported OS/architecture behavior before
 publishing. Include exact engine and CLI versions in the release notes. Do not
 label a container image, source archive or dashboard shell as a qualified desktop
-installer. Native containers remain a separate release channel.
+installer. Hosted containers remain a separate release channel.
 
 Website download data and Kasm dispatch must be enabled with their tested product
 integration. The existing Kasm notifier intentionally ignores `cykick` until
