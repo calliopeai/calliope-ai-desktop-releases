@@ -227,8 +227,9 @@ Cykick is a native Electron desktop agent. Python, Node, Calliope CLI, Codex,
 Claude Code, Astro CLI, two Piper voices and Whisper base are included. New
 installations require no Docker, WSL, or separate Python/Node installation.
 Select a working folder, connect existing local brains in place, and use your
-own model provider credentials. API keys use the operating system's credential
-service; Bedrock uses a selected local AWS CLI v2 profile.
+own model provider credentials. Keys saved through desktop provider setup use
+the operating system's credential service; Bedrock uses a selected local AWS CLI
+v2 profile. Linux key saving requires an unlocked GNOME Keyring or KWallet.
 
 | Platform | Architecture | Installers |
 | --- | --- | --- |
