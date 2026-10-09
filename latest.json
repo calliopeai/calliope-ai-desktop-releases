@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-09T02:57:04Z",
+  "generated": "2026-10-09T09:18:10Z",
   "ide": {
     "version": "1.7.2",
     "tag": "ide-v1.7.2",
@@ -219,6 +219,94 @@
         "name": "loadr-desktop-win32-x64.exe",
         "size": 273123884,
         "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/loadr-v1.4.2/loadr-desktop-win32-x64.exe"
+      }
+    ]
+  },
+  "cykick": {
+    "version": "0.2.0",
+    "tag": "cykick-v0.2.0",
+    "publishedAt": "2026-10-09T09:17:56Z",
+    "releaseUrl": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/tag/cykick-v0.2.0",
+    "assets": [
+      {
+        "name": "cykick-darwin-arm64-0.2.0.dmg",
+        "size": 1037717288,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/cykick-v0.2.0/cykick-darwin-arm64-0.2.0.dmg"
+      },
+      {
+        "name": "cykick-darwin-arm64-0.2.0.zip",
+        "size": 1056999390,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/cykick-v0.2.0/cykick-darwin-arm64-0.2.0.zip"
+      },
+      {
+        "name": "cykick-linux-arm64-0.2.0.AppImage",
+        "size": 1011929528,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/cykick-v0.2.0/cykick-linux-arm64-0.2.0.AppImage"
+      },
+      {
+        "name": "cykick-linux-arm64-0.2.0.deb",
+        "size": 919345536,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/cykick-v0.2.0/cykick-linux-arm64-0.2.0.deb"
+      },
+      {
+        "name": "cykick-linux-arm64-0.2.0.tar.gz",
+        "size": 1098888949,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/cykick-v0.2.0/cykick-linux-arm64-0.2.0.tar.gz"
+      },
+      {
+        "name": "cykick-linux-x64-0.2.0.AppImage",
+        "size": 1057565469,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/cykick-v0.2.0/cykick-linux-x64-0.2.0.AppImage"
+      },
+      {
+        "name": "cykick-linux-x64-0.2.0.deb",
+        "size": 984150880,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/cykick-v0.2.0/cykick-linux-x64-0.2.0.deb"
+      },
+      {
+        "name": "cykick-linux-x64-0.2.0.tar.gz",
+        "size": 1150181079,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/cykick-v0.2.0/cykick-linux-x64-0.2.0.tar.gz"
+      },
+      {
+        "name": "cykick-win32-x64-0.2.0-portable.exe",
+        "size": 1019159032,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/cykick-v0.2.0/cykick-win32-x64-0.2.0-portable.exe"
+      },
+      {
+        "name": "cykick-win32-x64-0.2.0.exe",
+        "size": 1019371589,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/cykick-v0.2.0/cykick-win32-x64-0.2.0.exe"
+      },
+      {
+        "name": "QUALIFICATION.json",
+        "size": 747,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/cykick-v0.2.0/QUALIFICATION.json"
+      },
+      {
+        "name": "SHA256SUMS",
+        "size": 1409,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/cykick-v0.2.0/SHA256SUMS"
+      },
+      {
+        "name": "source-darwin-arm64.json",
+        "size": 2831,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/cykick-v0.2.0/source-darwin-arm64.json"
+      },
+      {
+        "name": "source-linux-arm64.json",
+        "size": 3704,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/cykick-v0.2.0/source-linux-arm64.json"
+      },
+      {
+        "name": "source-linux-x64.json",
+        "size": 3692,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/cykick-v0.2.0/source-linux-x64.json"
+      },
+      {
+        "name": "source-win32-x64.json",
+        "size": 2954,
+        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/cykick-v0.2.0/source-win32-x64.json"
       }
     ]
   }

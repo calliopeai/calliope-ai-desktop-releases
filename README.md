@@ -19,6 +19,7 @@
 | **Calliope AI Lab** | `v1.4.0` | 2026-03-29 |
 | **Calliope AI Chat** | `v1.6.0` | 2026-10-08 |
 | **Calliope AI Loadr** | `v1.4.2` | 2026-09-18 |
+| **Cykick** | `v0.2.0` | 2026-10-09 |
 <!-- VERSIONS:END -->
 
 ---
