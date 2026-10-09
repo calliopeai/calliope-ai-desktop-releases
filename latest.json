@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-08T23:53:05Z",
+  "generated": "2026-10-09T02:57:04Z",
   "ide": {
     "version": "1.7.2",
     "tag": "ide-v1.7.2",
@@ -219,34 +219,6 @@
         "name": "loadr-desktop-win32-x64.exe",
         "size": 273123884,
         "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/loadr-v1.4.2/loadr-desktop-win32-x64.exe"
-      }
-    ]
-  },
-  "cykick": {
-    "version": "0.1.0",
-    "tag": "cykick-v0.1.0",
-    "publishedAt": "2026-10-08T23:52:51Z",
-    "releaseUrl": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/tag/cykick-v0.1.0",
-    "assets": [
-      {
-        "name": "cykick-darwin-arm64-0.1.0.dmg",
-        "size": 128328756,
-        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/cykick-v0.1.0/cykick-darwin-arm64-0.1.0.dmg"
-      },
-      {
-        "name": "qualification.json",
-        "size": 1252,
-        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/cykick-v0.1.0/qualification.json"
-      },
-      {
-        "name": "SHA256SUMS",
-        "size": 259,
-        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/cykick-v0.1.0/SHA256SUMS"
-      },
-      {
-        "name": "source.json",
-        "size": 902,
-        "url": "https://github.com/calliopeai/calliope-ai-desktop-releases/releases/download/cykick-v0.1.0/source.json"
       }
     ]
   }
